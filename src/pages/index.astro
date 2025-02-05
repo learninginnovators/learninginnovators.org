@@ -14,14 +14,14 @@ const projects = await getCollection('projects');
 
 <Layout title="Welcome to Astro.">
 	<Header gridBg>
-		<small class="small">can you believe this text is so small?</small>
-		<h2 class="text-12 leading-12 lg:text-20 lg:leading-20"><span class="font-mono">NAID</span> - A template for doers</h2>
-		<p class="subtitle w-85% lg:w-50% mx-auto mt-5">A short manifesto about how this project is going to change the world.</p>
+		<!-- <small class="small">can you believe this text is so small?</small> -->
+		<h2 class="text-12 leading-12 lg:text-20 lg:leading-20"><span class="font-mono">Learning Innovators</span></h2>
+		<p class="subtitle w-85% lg:w-50% mx-auto mt-5">A simple approach to teaching and learning.</p>
 	</Header>
 	<main>
-		<Section index source="projects.json" fullWidthBorder>
+		<Section index source="projects" fullWidthBorder>
 			<h2 class="title">Projects</h2>
-			<p class="subtitle-small">A short blurb about the projects you are deciding to list here and what they are about. Make it pithy and worth investing in.</p>
+			<p class="subtitle-small">We focus on </p>
 			<ul class="my-5 project-list ignore-content-container border-y-1 border-y-gray-200 border-y-dotted">
 				{projects.map((proj: any) => <ProjectCard {...proj.data} />)}
 			</ul>
@@ -36,7 +36,7 @@ const projects = await getCollection('projects');
 				</div>
 			</div>
 		</Section>
-		<SectionSpacer size="md" />
+		<!-- <SectionSpacer size="md" />
 		<Section fullWidthBorder={false}>
 			<h2 class="text-xl my-10">Our projects are trusted. By everyone? You bet! Names you recognize? Probably! Used all over the world? Absolutely!</h2>
 		</Section>
@@ -54,20 +54,20 @@ const projects = await getCollection('projects');
 				</ul>
 			</div>
 		</Section>
-		<SectionSpacer size="md" />
-		<Section index source="investors.md" fullWidthBorder>
+		<SectionSpacer size="md" /> -->
+		<Section index source="partners" fullWidthBorder>
 			<div class="pb-12.5">
-				<h2 class="title">People who give us money!</h2>
+				<h2 class="title">Our partners</h2>
 				<p class="subtitle-small md:w-[50%]">There's literally dozens of them, and they all want to be listed below to get some sort of credit for our work.</p>
 			</div>
 			<InvestorGrid />
 		</Section>
 		<SectionSpacer />
-		<Section index source="Component.framework" fullWidthBorder variantInside="dark">
+		<Section index source="contact" fullWidthBorder variantInside="dark">
 			<div class="grid lg:grid-cols-[4fr_1fr] place-items-center gap-5">
-				<h2 class="text-pretty title text-8 leading-8 font-bold c-gray-800 dark:c-gray-100">Interested in this theme? Like the look of it and need more in your life?<br/><span class="c-gray-500 dark:c-gray-300 text-[0.9em]">We know! It's pretty great.</span></h2>
+				<h2 class="text-pretty title text-8 leading-8 font-bold c-gray-800 dark:c-gray-100">Interested in working with us?<br/><span class="c-gray-500 dark:c-gray-300 text-[0.9em]">We know! It's pretty great.</span></h2>
 				<div>
-					<a href="https://github.com/studiolumina/naid" class="block fw-bold bg-gray-800 c-gray-100 text-5 text-center py-4 px-7">Visit Repo</a>
+					<a href="https://github.com/studiolumina/naid" class="block fw-bold bg-gray-800 c-gray-100 text-5 text-center py-4 px-7">Contact us</a>
 				</div>
 			</div>
 		</Section>

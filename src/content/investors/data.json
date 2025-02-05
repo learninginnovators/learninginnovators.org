@@ -1,41 +1,11 @@
 [
     {
         "type": "major",
-        "name":"Major Investor 1"
+        "name":"Deakin University"
     },
     {
         "type":"major",
-        "name":"Major Investor 2"
-    },
-    {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
-    },
-    {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
-    },
-    {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
-    },
-    {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
-    },
-    {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
-    },
-    {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
+        "name":"Monash University"
     },
     {
         "type":"minor",
