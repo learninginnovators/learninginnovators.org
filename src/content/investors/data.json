@@ -1,30 +1,30 @@
 [
     {
         "type": "major",
-        "name":"Deakin University"
+        "name": "Deakin University"
     },
     {
-        "type":"major",
-        "name":"Monash University"
+        "type": "major",
+        "name": "Monash University"
     },
     {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
+        "type": "minor",
+        "name": "Minor Investor",
+        "subtitle": "Company Name"
     },
     {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
+        "type": "minor",
+        "name": "Minor Investor",
+        "subtitle": "Company Name"
     },
     {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
+        "type": "minor",
+        "name": "Minor Investor",
+        "subtitle": "Company Name"
     },
     {
-        "type":"minor",
-        "name":"Minor Investor",
-        "subtitle":"Company Name"
+        "type": "minor",
+        "name": "Minor Investor",
+        "subtitle": "Company Name"
     }
 ]
