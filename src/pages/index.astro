@@ -16,19 +16,35 @@ const projects = await getCollection('projects');
 	<Header gridBg>
 		<!-- <small class="small">can you believe this text is so small?</small> -->
 		<h2 class="text-12 leading-12 lg:text-20 lg:leading-20"><span class="font-mono">Learning Innovators</span></h2>
-		<p class="subtitle w-85% lg:w-50% mx-auto mt-5">A simple approach to teaching and learning.</p>
+		<p class="subtitle w-85% lg:w-50% mx-auto mt-5">A new approach to teaching and learning.</p>
 	</Header>
 	<main>
-		<Section index source="projects" fullWidthBorder>
-			<h2 class="title">Projects</h2>
-			<p class="subtitle-small">We focus on </p>
+		<Section index source="products" fullWidthBorder>
+			<h2 class="title">Products</h2>
+			<p class="subtitle-small">We offer </p>
 			<ul class="my-5 project-list ignore-content-container border-y-1 border-y-gray-200 border-y-dotted">
 				{projects.map((proj: any) => <ProjectCard {...proj.data} />)}
 			</ul>
 			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
 				<div class="grid-col-1 pr-12.5">
 					<h3 class="mb-3 project-title">Mission</h3>
-					<p class="subtitle-small">Another pithy statement about the nature of these projects. Talk more about how they're beneficial to all developers/users and really underline how helpful they are in improving DX/UX.</p>
+					<p class="subtitle-small">To transform learning by empowering institutions and educators with assessment models that drive personalised learning, supported by software tools designed with learners and educators in mind.</p>
+				</div>
+				<div class="font-mono">
+					<small>$ cmd to run</small><br/><br/>
+					<small>{'{An animation of some kind.}'}</small>
+				</div>
+			</div>
+		<Section index source="projects" fullWidthBorder>
+			<h2 class="title">Projects</h2>
+			<p class="subtitle-small">We are working on </p>
+			<ul class="my-5 project-list ignore-content-container border-y-1 border-y-gray-200 border-y-dotted">
+				{projects.map((proj: any) => <ProjectCard {...proj.data} />)}
+			</ul>
+			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
+				<div class="grid-col-1 pr-12.5">
+					<h3 class="mb-3 project-title">Mission</h3>
+					<p class="subtitle-small">To transform learning by empowering institutions and educators with assessment models that drive personalised learning, supported by software tools designed with learners and educators in mind.</p>
 				</div>
 				<div class="font-mono">
 					<small>$ cmd to run</small><br/><br/>
@@ -58,7 +74,7 @@ const projects = await getCollection('projects');
 		<Section index source="partners" fullWidthBorder>
 			<div class="pb-12.5">
 				<h2 class="title">Our partners</h2>
-				<p class="subtitle-small md:w-[50%]">There's literally dozens of them, and they all want to be listed below to get some sort of credit for our work.</p>
+				<p class="subtitle-small md:w-[50%]">Advancing our mission together</p>
 			</div>
 			<InvestorGrid />
 		</Section>
