@@ -6,5 +6,8 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [Unocss({ injectReset: true, injectEntry: true }), icon()]
+    integrations: [Unocss({ injectReset: true, injectEntry: true }), icon()],
+    server: {
+        port: 3003,
+    },
 });
