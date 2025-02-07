@@ -10,7 +10,7 @@ Andrew is a leading expert in software engineering and computing education, with
 
 ### Laura Tubino
 
-Laura is an expert in curriculum design and STEM education. With a background in teaching and educational publishing, she is currently a Lecturer in Curriculum Design at Deakin University. Her work on personalised learning, scalable assessment strategies, and technology-enhanced education has been widely recognised for its impact on transforming assessment and curriculum models to foster learner agency and meaningful growth.
+Laura is an expert in assessment design and STEM education. With a background in teaching and educational publishing, she is currently a Lecturer in Curriculum Design at Deakin University. Her work on personalised learning, scalable assessment strategies, and technology-enhanced education has been widely recognised for its impact on transforming assessment and curriculum models to foster learner agency and meaningful growth.
 
 ### Charlotte Pierce
 
