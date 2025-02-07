@@ -20,26 +20,51 @@ const projects = await getCollection('projects');
 		<p class="subtitle w-85% lg:w-50% mx-auto mt-5">A new approach to teaching and learning.</p>
 	</Header>
 	<main>
+		<Section index source="vision" fullWidthBorder>
+			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
+				<div class="grid-col-1 pr-12.5">
+					<h3 class="mb-3 project-title">Vision</h3>
+					<p class="subtitle-small">A world where education is learner-centered with assessment that supports learning and fosters agency, curiosity, and meaningful growth</p>
+				</div>
+			</div>
+		</Section>
+		<SectionSpacer size="sm" />
 		<Section index source="mission" fullWidthBorder>
 			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
 				<div class="grid-col-1 pr-12.5">
 					<h3 class="mb-3 project-title">Mission</h3>
 					<p class="subtitle-small">To transform learning by empowering institutions and educators with assessment models that drive personalised learning, supported by software tools designed with learners and educators in mind.</p>
 				</div>
-				<div class="font-mono">
-					<!-- <small>$ cmd to run</small><br/><br/>
-					<small>{'{An animation of some kind.}'}</small> -->
+			</div>
+		</Section>
+		<SectionSpacer size="sm" />
+		<Section index source="values" fullWidthBorder>
+			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
+				<div class="grid-col-1 pr-12.5">
+					<h3 class="mb-3 project-title">Values</h3>
+					<p class="subtitle-small">
+						<ul>
+						<li><strong>Excellence</strong><br>
+							We are committed to the relentless pursuit of excellence. We work hard, persevere through challenges, and never settle for less than our best. With grit and determination, we strive to overcome obstacles, achieve ambitious goals, and create transformative change.
+						</li>
+						<li><strong>Unity</strong><br>
+							We believe in the power of unity. We are at our best when we work as a team, appreciating the individuality of our colleagues and encouraging everyone to contribute their strengths. Together, we achieve our shared goals while helping each other grow.</li>
+						<li><strong>Integrity</strong><br>
+							We hold integrity and transparency at the heart of everything we do. We uphold the highest ethical standards, building trust through honest communication and accountability. Our commitment to integrity ensures that our actions align with our vision for a better future in education.</li>
+						<li><strong>Innovation</strong><br>
+							We embrace innovation as the key to transforming education. By creating dynamic, learner-centered systems, we empower both educators and learners, equipping them with the tools to support growth and inspire individual potential.</li>
+						</ul>
+					</p>
 				</div>
 			</div>
 		</Section>
-		<SectionSpacer size="md" />
-		<Section index source="products" fullWidthBorder>
+		<!-- <Section index source="products" fullWidthBorder>
 			<h2 class="title">Products</h2>
 			<p class="subtitle-small">We offer </p>
 			<ul class="my-5 project-list ignore-content-container border-y-1 border-y-gray-200 border-y-dotted">
 				{projects.map((proj: any) => <ProjectCard {...proj.data} />)}
 			</ul>
-		</Section>
+		</Section> -->
 		<!-- <Section index source="projects" fullWidthBorder>
 			<h2 class="title">Projects</h2>
 			<p class="subtitle-small">See what we're up to </p>
