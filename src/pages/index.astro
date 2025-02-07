@@ -8,11 +8,12 @@ import ProjectCard from '../components/ProjectCard.astro';
 import SectionSpacer from '../components/SectionSpacer.astro';
 import StatsGrid from '../components/StatsGrid.astro';
 import InvestorGrid from '../components/InvestorGrid.astro';
+import Contact from '../components/Contact.astro';
 
 const projects = await getCollection('projects');
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Learning Innovators.">
 	<Header gridBg>
 		<!-- <small class="small">can you believe this text is so small?</small> -->
 		<h2 class="text-12 leading-12 lg:text-20 lg:leading-20"><span class="font-mono">Learning Innovators</span></h2>
@@ -21,18 +22,20 @@ const projects = await getCollection('projects');
 	<main>
 		<Section index source="projects" fullWidthBorder>
 			<h2 class="title">Projects</h2>
-			<p class="subtitle-small">We focus on </p>
+			<p class="subtitle-small">See what we're up to </p>
 			<ul class="my-5 project-list ignore-content-container border-y-1 border-y-gray-200 border-y-dotted">
 				{projects.map((proj: any) => <ProjectCard {...proj.data} />)}
 			</ul>
 			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
 				<div class="grid-col-1 pr-12.5">
 					<h3 class="mb-3 project-title">Mission</h3>
-					<p class="subtitle-small">Another pithy statement about the nature of these projects. Talk more about how they're beneficial to all developers/users and really underline how helpful they are in improving DX/UX.</p>
+					<p class="subtitle-small">
+                        Our mission is to make it easier for everyone to learn and teach. We do this by leveraging research to create tools that are fun, and easy to use. We believe that everyone should have access to quality education.
+                    </p>
 				</div>
 				<div class="font-mono">
-					<small>$ cmd to run</small><br/><br/>
-					<small>{'{An animation of some kind.}'}</small>
+					<!-- <small>$ cmd to run</small><br/><br/> -->
+					<!-- <small>{'{An animation of some kind.}'}</small> -->
 				</div>
 			</div>
 		</Section>
@@ -58,18 +61,20 @@ const projects = await getCollection('projects');
 		<Section index source="partners" fullWidthBorder>
 			<div class="pb-12.5">
 				<h2 class="title">Our partners</h2>
-				<p class="subtitle-small md:w-[50%]">There's literally dozens of them, and they all want to be listed below to get some sort of credit for our work.</p>
+				<p class="subtitle-small md:w-[50%]">Here are some of our partners using our tools and pedagogy. </p>
 			</div>
 			<InvestorGrid />
 		</Section>
 		<SectionSpacer />
 		<Section index source="contact" fullWidthBorder variantInside="dark">
-			<div class="grid lg:grid-cols-[4fr_1fr] place-items-center gap-5">
-				<h2 class="text-pretty title text-8 leading-8 font-bold c-gray-800 dark:c-gray-100">Interested in working with us?<br/><span class="c-gray-500 dark:c-gray-300 text-[0.9em]">We know! It's pretty great.</span></h2>
+            <Contact></Contact>
+			<!-- <div class="grid lg:grid-cols-[4fr_1fr] place-items-center gap-5">
+				<h2 class="text-pretty title text-8 leading-8 font-bold c-gray-800 dark:c-gray-100">Interested in working with us?<br/><span class="c-gray-500 dark:c-gray-300 text-[0.9em]">Get in touch.</span></h2>
 				<div>
 					<a href="https://github.com/studiolumina/naid" class="block fw-bold bg-gray-800 c-gray-100 text-5 text-center py-4 px-7">Contact us</a>
 				</div>
-			</div>
+			</div> -->
 		</Section>
 	</main>
 </Layout>
+
