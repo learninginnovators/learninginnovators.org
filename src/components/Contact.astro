@@ -1,0 +1,51 @@
+---
+const formEndpoint = "https://api.web3forms.com/submit";
+const accessKey = "f63a3ea8-f075-48a7-a871-aaddaa867420";
+---
+
+<form
+  action={formEndpoint}
+  method="POST"
+  class=" mx-auto p-6"
+>
+  <input type="hidden" name="access_key" value={accessKey} />
+
+  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+
+  <label class="block mb-2 text-gray-700">
+    Name
+    <input
+      type="text"
+      name="name"
+      required
+      class="w-full mt-1 p-2 border border-gray-300 focus:ring-2 focus:ring-blue-400"
+    />
+  </label>
+
+  <label class="block mb-2 text-gray-700">
+    Email
+    <input
+      type="email"
+      name="email"
+      required
+      class="w-full mt-1 p-2 border border-gray-300 focus:ring-2 focus:ring-blue-400"
+    />
+  </label>
+
+  <label class="block mb-2 text-gray-700">
+    Message
+    <textarea
+      name="message"
+      rows="4"
+      required
+      class="w-full mt-1 p-2 border border-gray-300 focus:ring-2 focus:ring-blue-400"
+    ></textarea>
+  </label>
+
+  <button
+    type="submit"
+    class="w-full mt-4 fw-bold bg-gray-800 c-gray-100 text-5 text-center py-2 px-4 hover:bg-gray-900 transition"
+  >
+    Contact us
+  </button>
+</form>
