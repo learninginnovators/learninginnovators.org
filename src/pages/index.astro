@@ -20,11 +20,21 @@ const projects = await getCollection('projects');
 		<p class="subtitle w-85% lg:w-50% mx-auto mt-5">A new approach to teaching and learning.</p>
 	</Header>
 	<main>
+		<Section index source="coming soon" fullWidthBorder>
+			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
+				<div class="grid-col-1 pr-12.5">
+					<h3 class="mb-3 project-title">Coming Soon!</h3>
+					<p class="subtitle-small">We are excited to be launching the learning innovators to support the advances in education.</p>
+					<p>More coming soon!</p>
+				</div>
+			</div>
+		</Section>
+		<SectionSpacer size="lg" />
 		<Section index source="vision" fullWidthBorder>
 			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
 				<div class="grid-col-1 pr-12.5">
 					<h3 class="mb-3 project-title">Vision</h3>
-					<p class="subtitle-small">A world where education is learner-centered with assessment that supports learning and fosters agency, curiosity, and meaningful growth</p>
+					<p class="subtitle-small">Leaerning Innovators is working toward a world where education is learner-centered with assessment that supports learning and fosters agency, curiosity, and meaningful growth.</p>
 				</div>
 			</div>
 		</Section>
@@ -33,7 +43,7 @@ const projects = await getCollection('projects');
 			<div class="grid md:grid-cols-[1fr_250px] py-12.5">
 				<div class="grid-col-1 pr-12.5">
 					<h3 class="mb-3 project-title">Mission</h3>
-					<p class="subtitle-small">To transform learning by empowering institutions and educators with assessment models that drive personalised learning, supported by software tools designed with learners and educators in mind.</p>
+					<p class="subtitle-small">Our mission is to transform learning by empowering institutions and educators with assessment models that drive personalised learning, supported by software tools designed with learners and educators in mind.</p>
 				</div>
 			</div>
 		</Section>
@@ -43,7 +53,9 @@ const projects = await getCollection('projects');
 				<div class="grid-col-1 pr-12.5">
 					<h3 class="mb-3 project-title">Values</h3>
 					<p class="subtitle-small">
-						<ul>
+						We adhere to the following values in all that we do:
+					</p>
+					<ul>
 						<li><strong>Excellence</strong><br>
 							We are committed to the relentless pursuit of excellence. We work hard, persevere through challenges, and never settle for less than our best. With grit and determination, we strive to overcome obstacles, achieve ambitious goals, and create transformative change.
 						</li>
@@ -53,8 +65,8 @@ const projects = await getCollection('projects');
 							We hold integrity and transparency at the heart of everything we do. We uphold the highest ethical standards, building trust through honest communication and accountability. Our commitment to integrity ensures that our actions align with our vision for a better future in education.</li>
 						<li><strong>Innovation</strong><br>
 							We embrace innovation as the key to transforming education. By creating dynamic, learner-centered systems, we empower both educators and learners, equipping them with the tools to support growth and inspire individual potential.</li>
-						</ul>
-					</p>
+					</ul>
+
 				</div>
 			</div>
 		</Section>
@@ -110,16 +122,16 @@ const projects = await getCollection('projects');
 			</div>
 			<InvestorGrid />
 		</Section> -->
-		<SectionSpacer />
+		<!-- <SectionSpacer />
 		<Section index source="contact" fullWidthBorder variantInside="dark">
-            <Contact></Contact>
-			<!-- <div class="grid lg:grid-cols-[4fr_1fr] place-items-center gap-5">
+      <Contact></Contact>
+			 <div class="grid lg:grid-cols-[4fr_1fr] place-items-center gap-5">
 				<h2 class="text-pretty title text-8 leading-8 font-bold c-gray-800 dark:c-gray-100">Interested in working with us?<br/><span class="c-gray-500 dark:c-gray-300 text-[0.9em]">Get in touch.</span></h2>
 				<div>
 					<a href="mailto:info@learninginnovators.org" class="block fw-bold bg-gray-800 c-gray-100 text-5 text-center py-4 px-7">Contact us</a>
 				</div>
-			</div> -->
-		</Section>
+			</div>
+		</Section> -->
 	</main>
 </Layout>
 
