@@ -1,13 +1,25 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-import Unocss from 'unocss/astro';
+import tailwindcss from '@tailwindcss/vite';
 
-import icon from 'astro-icon';
+import sitemap from "@astrojs/sitemap";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [Unocss({ injectReset: true, injectEntry: true }), icon()],
-    server: {
-        port: 3003,
-    },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  markdown: {
+    drafts: true,
+    shikiConfig: {
+      theme: "css-variables"
+    }
+  },
+  shikiConfig: {
+    wrap: true,
+    skipInline: false,
+    drafts: true
+  },
+  site: 'https://yourdomain.com',
+  integrations: [sitemap(), mdx()]
 });
