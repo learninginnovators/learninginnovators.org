@@ -1,4 +1,7 @@
 import { defineCollection, z } from "astro:content";
+import { docsLoader } from '@astrojs/starlight/loaders';
+import { docsSchema } from '@astrojs/starlight/schema'
+
 const courses = defineCollection({
   schema: z.object({
     courseTitle: z.string(),
@@ -71,4 +74,5 @@ export const collections = {
   events: events,
   infopages: infopages,
   posts: postsCollection,
+  docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
 };

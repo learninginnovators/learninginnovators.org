@@ -1,61 +1,71 @@
 ---
-const logos = [
-  {
-    url: "/brands/1.svg",
-  },
-  {
-    url: "/brands/2.svg",
-  },
-  {
-    url: "/brands/3.svg",
-  },
-  {
-    url: "/brands/4.svg",
-  },
-  {
-    url: "/brands/5.svg",
-  },
-  {
-    url: "/brands/6.svg",
-  },
-  {
-    url: "/brands/7.svg",
-  },
-  {
-    url: "/brands/8.svg",
-  },
-];
+// const logos = [
+//   {
+//     url: "/brands/1.svg",
+//   },
+//   {
+//     url: "/brands/2.svg",
+//   },
+//   {
+//     url: "/brands/3.svg",
+//   },
+//   {
+//     url: "/brands/4.svg",
+//   },
+//   {
+//     url: "/brands/5.svg",
+//   },
+//   {
+//     url: "/brands/6.svg",
+//   },
+//   {
+//     url: "/brands/7.svg",
+//   },
+//   {
+//     url: "/brands/8.svg",
+//   },
+// ];
 
 const stats = [
   {
     category: "Students",
-    count: "8000+",
+    count: "230,000+",
+  },
+  {
+    category: "Institutions",
+    count: "5",
   },
   {
     category: "Courses",
+    count: "800+",
+  },
+  {
+    category: "Educators",
     count: "200+",
   },
-  {
-    category: "Teachers",
-    count: "50+",
-  },
 ];
-const points = [
+const values = [
   {
-    title: "1. Make Education Accessible",
+    title: "Excellence",
     description:
-      "Dive into the world of branding and discover the art of creating impactful identities that resonate with your audience.",
+      "We are committed to the relentless pursuit of excellence. We work hard, persevere through challenges, and never settle for less than our best. With grit and determination, we strive to overcome obstacles, achieve ambitious goals, and create transformative change.",
   },
   {
-    title: "2. Help you Grow",
+    title: "Unity",
     description:
-      "Embark on a tailored educational journey, with courses curated to match your interests, goals, and learning pace.",
+      "We believe in the power of unity. We are at our best when we work as a team, appreciating the individuality of our colleagues and encouraging everyone to contribute their strengths. Together, we achieve our shared goals while helping each other grow.",
   },
   {
-    title: "3. Grow a Community",
+    title: "Integrity",
     description:
-      "At our e-learning platform, our mission is to empower individuals from all walks of life with the skills and knowledge.",
+      "We hold integrity and transparency at the heart of everything we do. We uphold the highest ethical standards, building trust through honest communication and accountability. Our commitment to integrity ensures that our actions align with our vision for a better future in education.",
   },
+  {
+    title: "Innovation",
+    description:
+      "We embrace innovation as the key to transforming education. By creating dynamic, learner-centered systems, we empower both educators and learners, equipping them with the tools to support growth and inspire individual potential.",
+  },
+
 ];
 ---
 
@@ -63,14 +73,18 @@ const points = [
   <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pb-24">
     <div class="text-center">
       <h1
-        class="text-4xl font-semibold font-display text-blue-950 sm:text-6xl text-balance w-1/2 mx-auto">
-        The mission behind Enlightr.
+        class="text-5xl font-semibold font-display text-blue-950 sm:text-6xl text-balance w-3/4 mx-auto">
+        The mission behind Learning Innovators.
       </h1>
       <p class="mt-4 text-slate-600 text-base w-1/2 mx-auto text-balance">
-        Your pathway to exploring brand & identity design for marketers online
+        Our mission is to transform learning by empowering institutions and educators with assessment models that drive personalised learning, supported by software tools designed with learners and educators in mind.
       </p>
 
-      <div
+      <p class="mt-4 text-slate-600 text-base w-1/2 mx-auto text-balance">
+        Learning Innovators is working toward a world where education is learner-centered, with assessment that supports learning and fosters agency, curiosity, and meaningful growth.
+      </p>
+
+      <!-- <div
         class="grid grid-cols-2 mt-12 sm:grid-cols-4 lg:grid-cols-4 justify-between text-center -ml-4">
         {
           logos.map((logo) => (
@@ -86,15 +100,15 @@ const points = [
           ))
         }
       </div>
-    </div>
+    </div> -->
 
     <dl
-      class="grid grid-cols-1 gap-x-2 gap-y-16 text-center lg:grid-cols-3 py-24">
+      class="grid grid-cols-1 gap-x-2 gap-y-16 text-center lg:grid-cols-4 py-24">
       {
         stats.map((stat) => (
-          <div class="mx-auto flex flex-col gap-y-4 p-4 lg:p-8 rounded-3xl bg-green-100 w-full">
+          <div class="mx-auto flex flex-col gap-y-4 p-4 lg:p-8 rounded-3xl bg-blue-300 w-full">
             <dt class="leading-7 text-slate-500">{stat.category}</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-blue-950 font-display sm:text-8xl">
+            <dd class="order-first text-l font-semibold tracking-tight text-blue-950 font-display sm:text-2xl">
               {stat.count}
             </dd>
           </div>
@@ -105,25 +119,26 @@ const points = [
     <div class="flex flex-col max-w-2xl mx-auto gap-12 items-start mt-12">
       <div>
         <h1
-          class="text-4xl font-semibold font-display text-blue-950 lg:text-9xl">
+          class="text-4xl font-semibold font-display text-blue-950 lg:text-4xl">
           A little bit about us...
         </h1>
         <p class="text-slate-600 text-bs">
-          Elevate your skills in brand identity design with our comprehensive
-          e-learning platform. Dive into the world of branding and discover the
-          art of creating impactful identities that resonate with your audience.
+          Learning Innovators was founded in 2025 by a group of educators who were passionate about sharing the power of learner-centered assessment. We have lived experience of the transformative experience of shifting your assessment paradigm, and Learning Innovators exists to support wider adoption of this approach.
+        </p>
+        <p class="text-slate-600 pt-5">
+          We adhere to the following values in all that we do:
         </p>
       </div>
       <ul
         class="grid grid-cols-1 gap-6 list-none md:grid-cols-1 md:gap-12"
         role="list">
         {
-          points.map((point) => (
+          values.map((value) => (
             <li>
-              <p class="text-lg font-display text-blue-950 lg:text-8xl">
-                {point.title}
+              <p class="text-lg font-display text-blue-950 lg:text-xl">
+                {value.title}
               </p>
-              <p class="mt-2 text-2xl text-slate-500">{point.description}</p>
+              <p class="mt-2 text-slate-500">{value.description}</p>
             </li>
           ))
         }

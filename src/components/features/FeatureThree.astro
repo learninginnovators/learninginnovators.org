@@ -1,16 +1,40 @@
 ---
 const features = [
   {
-    title: "Learn at your own pace with hands-on creative classes.",
+    title: "Assessment for Learning",
     description:
-      "Our hands-on creative classes are the perfect way to learn at your own pace and discover new talents.",
+      "Change assessment practices to harness student focus on assessment to drive learning. Students work through a carefully designed sequence of tasks to achieve and demonstrate learning.",
     icon: "route",
   },
   {
-    title: "Enlightr teachers are creatives and professionals.",
+    title: "Feedback Driven",
     description:
-      "At Enlightr, we believe that everyone has something to teach and share with the world.",
+      "Use iterative feedback cycles to develop competencies, and validate achievement, with students engaging in formative feedback dialogs with teaching staff.",
+    icon: "cycle",
+  },
+  {
+    title: "Process over Product",
+    description:
+      "Design tasks to explicitly focus on learning, capturing the process of learning and the journey to achievement, rather than just assessing the final product.",
     icon: "school",
+  },
+  {
+    title: "Assess Holistically",
+    description:
+      "Use grade-aligned personas to guide students through the learning process, with grades that are more valid and clearly communicated.",
+    icon: "grade",
+  },
+  {
+    title: "Empower Students",
+    description:
+      "Give students agency in their learning with actionable iterative feedback to support their learning journey and validate achievement.",
+    icon: "agent",
+  },
+  {
+    title: "Differentiate Outcomes",
+    description:
+      "Use grade aligned tasks to move from scaffolding learning for passing students, to challenging and advancing high achievers well beyond traditional approaches.",
+    icon: "award",
   },
   // Add more features as needed
 ];
@@ -19,12 +43,14 @@ const features = [
 <section>
   <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
     <div class="lg:col-span-2 mx-auto max-w-2xl lg:text-center">
-      <p class="text-4xl font-semibold font-display text-blue-950 text-balance">
-        New Skills with Enlightr. A Detailed Look at Our Curriculum
+      <p class="text-5xl font-semibold font-display text-blue-950 text-balance">
+        A New Learning Focused Assessment Paradigm.
       </p>
       <p class="text-slate-600 mt-4 w-1/2 mx-auto text-balance">
-        With real world projects to create and online classes that fit a busy
-        routine
+        Moving beyond marks, utilising grades to scaffold learning with iterative feedback to validate achievement.
+      </p>
+      <p class="text-slate-600 mt-4 w-1/2 mx-auto text-balance">
+        See how our streamlined approach improves learning outcomes:
       </p>
     </div>
     <ul
@@ -34,7 +60,7 @@ const features = [
         features.map((feature) => (
           <>
             <li>
-              <div class="p-8 rounded-3xl lg:p-10 bg-blue-50 h-full">
+              <div class="p-8 rounded-3xl lg:p-10 bg-blue-200 h-full">
                 <div class="rounded-full bg-white h-10 w-10 items-center inline-flex text-blue-500 mx-auto justify-center">
                   {feature.icon === "route" && (
                     <svg
@@ -77,6 +103,61 @@ const features = [
                       />
                       <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
                       <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                    </svg>
+                  )}
+                  {feature.icon === "grade" && (
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon"
+                      height="24"
+                      viewBox="0 -960 960 960"
+                      width="24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="currentColor">
+                        <path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320zM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560zm1 240zm-1-280z"/>
+                    </svg>
+                  )}
+                  {feature.icon === "award" && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 -960 960 960" 
+                      fill="currentColor"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/>
+                    </svg>
+                  )}
+                  {feature.icon === "agent" && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 -960 960 960"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M240-80v-172q-57-52-88.5-121.5T120-520q0-150 105-255t255-105q125 0 221.5 73.5T827-615l52 205q5 19-7 34.5T840-360h-80v120q0 33-23.5 56.5T680-160h-80v80h-80v-160h160v-200h108l-38-155q-23-91-98-148t-172-57q-116 0-198 81t-82 197q0 60 24.5 114t69.5 96l26 24v208h-80Zm254-360Zm-54 80h80l6-50q8-3 14.5-7t11.5-9l46 20 40-68-40-30q2-8 2-16t-2-16l40-30-40-68-46 20q-5-5-11.5-9t-14.5-7l-6-50h-80l-6 50q-8 3-14.5 7t-11.5 9l-46-20-40 68 40 30q-2 8-2 16t2 16l-40 30 40 68 46-20q5 5 11.5 9t14.5 7l6 50Zm40-100q-25 0-42.5-17.5T420-520q0-25 17.5-42.5T480-580q25 0 42.5 17.5T540-520q0 25-17.5 42.5T480-460Z"/>
+                    </svg>
+                  )}
+                  {feature.icon === "cycle" && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 -960 960 960"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="currentColor">
+                      <path d="M314-115q-104-48-169-145T80-479q0-26 2.5-51t8.5-49l-46 27-40-69 191-110 110 190-70 40-54-94q-11 27-16.5 56t-5.5 60q0 97 53 176.5T354-185l-40 70Zm306-485v-80h109q-46-57-111-88.5T480-800q-55 0-104 17t-90 48l-40-70q50-35 109-55t125-20q79 0 151 29.5T760-765v-55h80v220H620ZM594 0 403-110l110-190 69 40-57 98q118-17 196.5-107T800-480q0-11-.5-20.5T797-520h81q1 10 1.5 19.5t.5 20.5q0 135-80.5 241.5T590-95l44 26-40 69Z"/>
                     </svg>
                   )}
                 </div>
