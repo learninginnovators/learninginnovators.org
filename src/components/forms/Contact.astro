@@ -1,9 +1,14 @@
+---
+const formEndpoint = "https://api.web3forms.com/submit";
+const accessKey = "f63a3ea8-f075-48a7-a871-aaddaa867420";
+---
+
 <section>
   <div
     class="relative flex justify-center max-h-full overflow-hidden lg:px-0 md:px-12"
   >
     <div
-      class="relative z-10 flex flex-col items-center lg:border-l border-slate-200 flex-1 px-8 py-32 bg-white lg:py-16 md:flex-none md:px-28 sm:justify-center"
+      class="relative z-10 flex flex-col items-center flex-1 px-8 py-32 bg-white lg:py-16 md:flex-none md:px-28 sm:justify-center"
     >
       <div class="w-full mx-auto lg:max-w-sm md:px-0 lg:w-96 sm:px-4">
         <div class="flex flex-col">
@@ -14,12 +19,14 @@
               Let's get started!
             </h2>
             <p class="mt-2 text-sm text-slate-600">
-              Complete the details below so I can process your request and then
-              schedule a time to discuss your goals.
+              Complete the details below so we can schedule a time to discuss your goals.
             </p>
           </div>
         </div>
-        <form>
+        <form
+          action={formEndpoint}
+          method="POST">
+          <input type="hidden" name="access_key" value={accessKey} />
           <div class="mt-4 space-y-6">
             <div>
               <label
@@ -92,7 +99,7 @@
         </form>
       </div>
     </div>
-    <div
+    <!-- <div
       class="hidden h-screen lg:block lg:flex-1 lg:relative md:contents lg:order-first bg-blue-500"
     >
       <div
@@ -109,6 +116,6 @@
           height="873"
         />
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
