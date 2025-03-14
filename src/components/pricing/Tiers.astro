@@ -1,61 +1,202 @@
 ---
 const pricingOptions = [
   {
-    plan: "Basic",
-    price: "$29",
-    description: "For individuals",
+    plan: "Self Managed",
+    price: "$0",
+    priceContext: "always",
+    description: "Use our free open source platform and support yourself",
     features: [
-      "Access to Free Course Content",
-      "No Certificate",
-      "1 Month Access to Materials",
-      "Forum Support",
+      {
+        text: "OnTrack Software",
+        icon: 'included',
+      },
+      {
+        text: "Documentation",
+        icon: 'included',
+      },
+      {
+        text: "Community Support",
+        icon: 'included',
+      },
+      {
+        text: "Managed Upgrades",
+        icon: 'excluded',
+      },
+      {
+        text: "Staff Onboarding",
+        icon: 'excluded',
+      },
+      {
+        text: "End User Support",
+        icon: 'excluded',
+      },
+      {
+        text: "Sponsor a Feature",
+        icon: 'optional',
+      },
     ],
-    bgColor: "bg-blue-100",
+    bgColor: "bg-slate-300",
+    textColor: "text-slate-950",
+    buttonBgColor: "bg-slate-50",
+    buttonText: "Learn More",
+    buttonTextColor: "text-slate-600",
+    buttonHoverBgColor: "bg-slate-100",
+  },
+  {
+    plan: "Base Partner",
+    price: "$10k",
+    priceContext: "/ year",
+    description: "Get technical support for the platform.",
+    features: [
+      {
+        text: "OnTrack Software",
+        icon: 'included',
+      },
+      {
+        text: "Documentation",
+        icon: 'included',
+      },
+      {
+        text: "Community Support",
+        icon: 'included',
+      },
+      {
+        text: "Managed Upgrades",
+        icon: 'included',
+      },
+      {
+        text: "Staff Onboarding",
+        icon: 'excluded',
+      },
+      {
+        text: "End User Support",
+        icon: 'excluded',
+      },
+      {
+        text: "Sponsor a Feature",
+        icon: 'optional',
+      },
+    ],
+    bgColor: "bg-blue-300",
     textColor: "text-blue-950",
-    buttonBgColor: "bg-blue-50",
-    buttonText: "Get started",
+    buttonBgColor: "bg-blue-100",
+    buttonText: "Learn More",
     buttonTextColor: "text-blue-600",
-    buttonHoverBgColor: "bg-blue-100",
+    buttonHoverBgColor: "bg-blue-600",
   },
   {
-    plan: "Pro",
-    price: "$99",
-    description: "For medium-sized businesses",
+    plan: "Supported Partner",
+    price: "$1",
+    priceContext: "/ student / offering",
+    description: "Go beyond software support and get support for your staff and students.",
     features: [
-      "Full Access to Course Content",
-      "Certificate upon Completion",
-      "Lifetime Access to Materials",
-      "Email Support",
+      {
+        text: "OnTrack Software",
+        icon: 'included',
+      },
+      {
+        text: "Documentation",
+        icon: 'included',
+      },
+      {
+        text: "Community Support",
+        icon: 'included',
+      },
+      {
+        text: "Managed Upgrades",
+        icon: 'included',
+      },
+      {
+        text: "Staff Onboarding",
+        icon: 'included',
+      },
+      {
+        text: "End User Support",
+        icon: 'included',
+      },
+      {
+        text: "Cloud Hosted Solution",
+        icon: 'excluded',
+      },
+      {
+        text: "Sponsor a Feature",
+        icon: 'optional',
+      },
+      {
+        text: "Contribution Discounts",
+        icon: 'excluded',
+      },
     ],
-    bgColor: "bg-green-100",
+    bgColor: "bg-green-300",
     textColor: "text-green-950",
-    buttonBgColor: "bg-green-500",
-    buttonText: "Get started",
-    buttonTextColor: "text-white",
-    buttonHoverBgColor: "bg-green-600",
+    buttonBgColor: "bg-green-50",
+    buttonText: "Learn More",
+    buttonTextColor: "text-green-600",
+    buttonHoverBgColor: "bg-green-300",
   },
   {
-    plan: "Business",
-    price: "$129",
-    description: "For medium companies",
+    plan: "Premium Partner",
+    price: "$4",
+    priceContext: "/ student / offering",
+    description: "Collaborate closely to co-design and co-develop features and early access to new version.",
     features: [
-      "Full Access to Course Content",
-      "Certificate upon Completion",
-      "Lifetime Access to Materials",
-      "Priority Email Support",
+      {
+        text: "OnTrack Software",
+        icon: 'included',
+      },
+      {
+        text: "Documentation",
+        icon: 'included',
+      },
+      {
+        text: "Community Support",
+        icon: 'included',
+      },
+      {
+        text: "Managed Upgrades",
+        icon: 'included',
+      },
+      {
+        text: "Staff Onboarding",
+        icon: 'included',
+      },
+      {
+        text: "End User Support",
+        icon: 'included',
+      },
+      {
+        text: "Cloud Hosted Solution",
+        icon: 'optional',
+      },
+      {
+        text: "Sponsor a Feature",
+        icon: 'optional',
+      },
+      {
+        text: "Contribution Discounts",
+        icon: 'included',
+      },
+      {
+        text: "Influence Roadmap",
+        icon: 'included',
+      },
+      {
+        text: "Co-design Enhancements",
+        icon: 'included',
+      },
     ],
-    bgColor: "bg-yellow-100",
+    bgColor: "bg-yellow-300",
     textColor: "text-yellow-950",
     buttonBgColor: "bg-yellow-50",
-    buttonText: "Get started",
+    buttonText: "Learn More",
     buttonTextColor: "text-yellow-600",
-    buttonHoverBgColor: "bg-yellow-100",
+    buttonHoverBgColor: "bg-yellow-200",
   },
 ];
 ---
 
 <section>
-  <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-24">
+  <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-8xl lg:pt-24">
     <div class="text-center">
       <h1 class="text-4xl font-semibold font-display text-blue-950 lg:text-6xl text-balance ">
         Gain clarity in pricing with transparent and predictable costs
@@ -65,24 +206,51 @@ const pricingOptions = [
         approach, scale up as your requirements grow.
       </p>
     </div>
-    <div class="grid grid-cols-1 gap-2 mt-12 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-2 mt-12 lg:grid-cols-4">
   {pricingOptions.map((option) => (
     <div class={`h-full p-8 ${option.bgColor} rounded-3xl`}>
       <div class={`flex flex-col w-full gap-8 text-3xl ${option.textColor} font-display`}>
-        <span class="text-2xl lg:text-9xl order-last">{option.price}</span>
         <span>{option.plan}</span>
+        <div>
+          <span class="text-2xl lg:text-5xl order-last">{option.price} </span><span class="text-sm order-last">{option.priceContext}</span>
+        </div>
       </div>
-      <p class="mt-8 text-xl font-display ${option.textColor}">{option.description}</p>
-      <ul role="list" class={`flex flex-col order-last mt-8 text-sm ${option.textColor} gap-y-3`}>
+      <p class={`mt-8 text-xl font-display ${option.textColor}`}>{option.description}</p>
+      <ul role="list" class={`flex flex-col order-last mt-8 text-sm gap-y-3`}>
         {option.features.map((feature) => (
-          <li class="flex items-center gap-3">
+          <li class={`flex items-center gap-3 ${feature.icon === 'included' ? option.textColor : (feature.icon === 'excluded' ? 'text-slate-400' : 'text-slate-600')}`}>
             <!-- SVG icon can be replaced with a dynamic import if needed -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-              <path d="M9 12l2 2l4 -4"></path>
-            </svg>
-            <span>{feature}</span>
+            {feature.icon === 'included' && (
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                <path d="M9 12l2 2l4 -4"></path>
+              </svg>
+            )}
+            {feature.icon === 'excluded' && (
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-x">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M10 10l4 4m0 -4l-4 4" />
+              </svg>
+            )}
+            {feature.icon === 'optional' && (
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-check">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+                <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+                <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+                <path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+                <path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+                <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+                <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+                <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+                <path d="M9 12l2 2l4 -4" />
+              </svg>
+            )}
+
+
+              <span>{feature.text}</span>
           </li>
         ))}
       </ul>
