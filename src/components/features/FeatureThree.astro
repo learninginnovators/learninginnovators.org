@@ -3,7 +3,7 @@ const features = [
   {
     title: "Assessment for Learning",
     description:
-      "Change assessment practices to harness student focus on assessment to drive learning. Students work through a carefully designed sequence of tasks to achieve and demonstrate learning.",
+      "Change assessment practices to harness student focus to drive learning. Students work through a carefully designed sequence of tasks to achieve and demonstrate learning.",
     icon: "route",
   },
   {
@@ -15,7 +15,7 @@ const features = [
   {
     title: "Process over Product",
     description:
-      "Design tasks to explicitly focus on learning, capturing the process of learning and the journey to achievement, rather than just assessing the final product.",
+      "Design tasks to explicitly focus on learning, capture the process of learning, and the journey to achievement, rather than just assessing the final product.",
     icon: "school",
   },
   {
@@ -27,13 +27,13 @@ const features = [
   {
     title: "Empower Students",
     description:
-      "Give students agency in their learning with actionable iterative feedback to support their learning journey and validate achievement.",
+      "Give students agency in their learning, with actionable iterative feedback to support their learning journey and validate achievement.",
     icon: "agent",
   },
   {
     title: "Differentiate Outcomes",
     description:
-      "Use grade aligned tasks to move from scaffolding learning for passing students, to challenging and advancing high achievers well beyond traditional approaches.",
+      "Use grade-aligned tasks to move from scaffolding learning for passing students, to challenging and advancing high achievers well beyond traditional approaches.",
     icon: "award",
   },
   // Add more features as needed
@@ -44,23 +44,33 @@ const features = [
   <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
     <div class="lg:col-span-2 mx-auto max-w-2xl lg:text-center">
       <p class="text-5xl font-semibold font-display text-blue-950 text-balance">
-        A New Learning Focused Assessment Paradigm.
+        Education Re-Imagined
       </p>
-      <p class="text-slate-600 mt-4 w-1/2 mx-auto text-balance">
-        Moving beyond marks, utilising grades to scaffold learning with iterative feedback to validate achievement.
+      <p class="text-slate-600 mt-4 mx-auto text-balance text-xl">
+        Moving beyond marks
       </p>
-      <p class="text-slate-600 mt-4 w-1/2 mx-auto text-balance">
-        See how our streamlined approach improves learning outcomes:
+      <p class="text-slate-600 mx-auto text-balance text-xl">
+        Iterative feedback scaffolds and validates learning
+      </p>
+      <p class="text-slate-600 mb-4 mx-auto text-balance text-xl">
+        Assessment with integrity
+      </p>
+
+      <p class="text-slate-600 mt-4 mx-auto text-balance text-md">
+        Learning Innovators was founded by a group of passionate educators dedicated to sharing the power of learner-centered assessment. We have lived experience of the transformative potential systemic shifts in assessment can achieve and have witnessed a resounding impact in learning outcomes for students. Energised by this success, Learning Innovators exists to support like-minded and progressive educators to empower their students through the adoption of student-centred, assessment-driven learning.
+      </p>
+      <p class="text-slate-600 mt-4 mx-auto text-balance text-lg">
+        See how our streamlined approach can help you improve learning outcomes: 
       </p>
     </div>
     <ul
-      class="grid grid-cols-1 mt-12 list-none md:grid-cols-2 gap-2 text-center"
+      class="grid grid-cols-1 mt-8 list-none md:grid-cols-2 gap-2 text-center"
       role="list">
       {
         features.map((feature) => (
           <>
             <li>
-              <div class="p-8 rounded-3xl lg:p-10 bg-blue-200 h-full">
+              <div class="p-2 rounded-3xl lg:p-5 bg-blue-200 h-full">
                 <div class="rounded-full bg-white h-10 w-10 items-center inline-flex text-blue-500 mx-auto justify-center">
                   {feature.icon === "route" && (
                     <svg
@@ -161,10 +171,10 @@ const features = [
                     </svg>
                   )}
                 </div>
-                <p class="text-lg mt-12 font-display text-blue-900 lg:text-3xl">
+                <p class="text-lg mt-6 font-display text-blue-900 lg:text-3xl">
                   {feature.title}
                 </p>
-                <p class="mt-2 text-base text-slate-600">
+                <p class="mt-2 mb-2 text-base text-slate-600">
                   {feature.description}
                 </p>
               </div>
