@@ -1,6 +1,3 @@
----
-layout: ../layouts/AboutLayout.astro
----
 
 ## OnTrack
 
