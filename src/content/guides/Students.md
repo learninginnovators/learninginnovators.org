@@ -20,4 +20,4 @@ You can see in column "I" it says "Assessment", this refers to the tutorial stre
 
 In this spreadsheet you can assign the specific tutorial under this tutorial stream that should be marking this students work.
 
-Use the Abbreviation of that tutorial to assign a student to it.
+Use the Abbreviation of that tutorial to assign a student to it, in our example the Abbreviation was P1.
