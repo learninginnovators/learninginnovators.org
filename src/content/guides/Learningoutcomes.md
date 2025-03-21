@@ -7,7 +7,7 @@ If you do not add learning outcomes here, students will submit each task without
 
 To add the learning outcomes you can either:
 
-* On the bottom right corner select the icon "+Add Outcome" and you will get this screen where you can fill in the information of one learning outcome. 
+* on the bottom right corner select the icon "+Add Outcome" and you will get this screen where you can fill in the information of one learning outcome. 
 
 <img width="898" alt="Screenshot 2025-03-21 at 1 11 05 pm" src="https://github.com/user-attachments/assets/896b2e65-449f-45fc-8f32-a4d97298161f" />
 
