@@ -1,7 +1,3 @@
----
-layout: ../layouts/AboutLayout.astro
----
-
 
 ## Learning Outcomes
 
