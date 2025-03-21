@@ -11,7 +11,7 @@ These tutorial groups can be used to assign a tutor a group of students and also
 
 ### 2. Add a tutorial by filling all boxes and then clicking "+".
    
-     a. Under **Abbreviation** you can use anything, we recomment using either the name of the tutor or the task that this tutorial will be assigned to. This name must be unique, the system will not allow you to call two tutorials the same.
+     a. Under <b>Abbreviation<b> you can use anything, we recomment using either the name of the tutor or the task that this tutorial will be assigned to. This name must be unique, the system will not allow you to call two tutorials the same.
    
      b. Under Campus choose either the Campus that the students assigned to this tutorials are in. The system will not allow students in other Campus to be enrolled in this tutorial so if you don't want this restriction just choose "unspecified campus". This is very important!
    
