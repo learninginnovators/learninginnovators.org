@@ -28,8 +28,7 @@ These tutorial groups can be used to assign a tutor a group of students and also
    
      h. CLICK "+" or your tutorial will not be saved in the system! This will also give you spaces to fill in info for a new tutorial if required.
 
-   # NOTE
-   that clicking on "New tutorial stream" is used to create a new group of tutorials. To create a new tutorial only, you just fill in the empty boxes under the tutorial stream you already have.
+   NOTE that clicking on "New tutorial stream" is used to create a new group of tutorials. To create a new tutorial only, you just fill in the empty boxes under the tutorial stream you already have.
 
 4. Assigning students to marking tutorials can be done in different ways.
 
