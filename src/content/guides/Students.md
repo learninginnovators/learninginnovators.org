@@ -9,7 +9,7 @@ Once students are enrolled they have access to OnTrack. They keep this access fo
 
 If you want to enroll or unenroll students directly, you can do this through a csv. To get the csv for updating, click on "Download" at the bottom of the page. This is an example of an empty csv:
 
-![Uploading Screenshot 2025-03-21 at 3.25.40 pm.png…]()
+<img width="922" alt="Screenshot 2025-03-21 at 3 25 40 pm" src="https://github.com/user-attachments/assets/7dd3a364-210b-47c0-9935-8e43ff66aa58" />
 
 
 You can fill this up manually, adding or removing students, as long as you have all their required information.
