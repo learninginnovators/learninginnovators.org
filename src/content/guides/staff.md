@@ -9,8 +9,14 @@ To add staff into the unit start typing the name of the staff in the bottom spac
 
 If the name of the staff you need to add does not come up in the drop down list when typing, ask them to go to ontrack.deakin.edu.au. That will bring them into the list.
 
+The default access after you have one convenor is "Tutor"
+
 If you want someone to be able to make changes and access all the information in this unit choose "Convenor" role. 
 
-If you only want to provide tutor access choose "Tutor".
-
 Assign the Unit chair to the main convenor role by selecting the respective box.
+
+If you can't change someone's role to convenor it is because they don't have that level of access. Ask an administrator to provide that level of access to that staff member.
+
+You can delete staff at any point, except whoever is labelled as main convenor. If you want to delete that staff member from the list you first need to pass the main convenor role to another convenor.
+
+
