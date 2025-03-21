@@ -40,7 +40,7 @@ These tutorial groups can be used to assign a tutor a group of students and also
 
     d. If you create the tutorials late or if you want a specific distribution of students or tasks you can enrol students using a csv under the "Student" tab. We show you how to do this in the "Student" section.
 
-### 6. Assign the tutorial stream you want to use for marking a task to the specific task in "Task" tab under step (2).
+### 5. Assign the tutorial stream you want to use for marking a task to the specific task in "Task" tab under step (2).
    This is a common issue that we get contacted for, when tutors can't see their students but they have been correctly assigned to their tutorials it is because th wrong tutorial streamhas been assigned to that task!
 
    
