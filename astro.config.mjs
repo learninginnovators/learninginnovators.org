@@ -48,10 +48,19 @@ export default defineConfig({
           },
           {
             label: "Unit Administration",
-            collapsed: true,
+            collapsed: false,
             autogenerate: {
               directory:
                 "docs/ontrack/unit-admin",
+              collapsed: true,
+            },
+          },
+          {
+            label: "Unit Delivery",
+            collapsed: false,
+            autogenerate: {
+              directory:
+                "docs/ontrack/unit-delivery",
               collapsed: true,
             },
           },
