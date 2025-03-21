@@ -18,7 +18,7 @@ These tutorial groups can be used to assign a tutor a group of students and also
      c. Under Location you can use any term you want.
    
      d. Under Day you can choose the day this tutorial runs if this is linked to a teaching tutorial or "Asynchronous" if it is just a marking group.
-   ##ANDREW does this do something?
+   ## ANDREW does this do something?
    
      e. Under Time you write the time this tutorial runs if this is linked to a teaching tutorial, you can also write N/A if there is no specific time this group meets.
    
@@ -28,9 +28,10 @@ These tutorial groups can be used to assign a tutor a group of students and also
    
      h. CLICK "+" or your tutorial will not be saved in the system! This will also give you spaces to fill in info for a new tutorial if required.
 
-   ##NOTE that clicking on "New tutorial stream" is used to create a new group of tutorials. To create a new tutorial only, you just fill in the empty boxes under the tutorial stream you already have.
+   ## NOTE
+   that clicking on "New tutorial stream" is used to create a new group of tutorials. To create a new tutorial only, you just fill in the empty boxes under the tutorial stream you already have.
 
-3. Assigning students to marking tutorials can be done in different ways.
+4. Assigning students to marking tutorials can be done in different ways.
 
    a. If you have chosen under the "Unit Details" tab "synchronise timetable", any workshops or tutorials in Calista will apear here with the respective students enrolled.
 
@@ -40,7 +41,7 @@ These tutorial groups can be used to assign a tutor a group of students and also
 
    d. If you create the tutorials late or if you want a specific distribution of students or tasks you can enrol students using a csv under the "Student" tab. We show you how to do this in the "Student" section.
 
-4. Assign the tutorial stream you want to use for marking a task to the specific task in "Task" tab under step (2).
+5. Assign the tutorial stream you want to use for marking a task to the specific task in "Task" tab under step (2).
    This is a common issue that we get contacted for, when tutors can't see their students but they have been correctly assigned to their tutorials it is because th wrong tutorial streamhas been assigned to that task!
 
    
