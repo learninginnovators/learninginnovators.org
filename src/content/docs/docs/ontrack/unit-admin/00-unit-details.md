@@ -1,5 +1,7 @@
-
-## Unit details
+---
+title: Unit Details
+description: Setup the basic information of your unit in OnTrack
+---
 
 This image shows all the information required in the unit details tab of an OnTrack unit. We will describe each area in detail in this page.
 
@@ -8,14 +10,17 @@ This image shows all the information required in the unit details tab of an OnTr
 #### Code
 Under "Code" the unit code assigned by the University is required. If more than a unit should share an OnTrack site, both codes should be included in this space using the following sample format: "DKN000/DKN999".
 
-For a teaching period, in Week O, when OnTrack connects with other university systems, students enrolled in the unit will be automatically enrolled into the unit in OnTrack through this code. From then on, every night, student enrollments will be updated so any changes in student enrolments will be reflected in OnTrack.
+<!-- TODO: I think this should move to the student tab -->
 
-For a custom period, 
-### Andrew please add what happens for custom periods
+For a teaching period, in Week O, when OnTrack connects with other university systems, students enrolled in the unit will be automatically enrolled into the unit in OnTrack through this code. From then on, every night, student enrolments will be updated, so any changes in student enrolments will be reflected in OnTrack.
 
-If you would like to enrol students before the system does it automatically (on the second day of week 0), or unenrol students (for example when a unit code is incorrectly added and the wrong students have been automatically enroled), this can be done through the "Students" tab. Instructions on how to do this can be found in the "Students" section of this guide.
+For a custom period, you will need to manually enrol students. Instructions on how to do this can be found in the "Students" section of this guide.
 
-### Andrew If the cvs is updated will the system override this when it syncs with the system again?
+If you would like to enrol students before the system does it automatically (on the second day of week 0), or un-enrol students (for example when a unit code is incorrectly added and the wrong students have been automatically enrolled), this can be done through the "Students" tab. Instructions on how to do this can be found in the "Students" section of this guide.
+
+<!-- ### Andrew If the cvs is updated will the system override this when it syncs with the system again?
+Sync will enrol or withdraw students who have enrolled or withdrawn - so it wont remove other students you add.
+ -->
 
 #### Name
 
@@ -37,13 +42,13 @@ At the end of the teaching period, a student must submit their portfolio togethe
 
 #### Start Date and End date
 
-### Andrew is this correct? If your unit is not running on a regular teaching period, or you do not want students to be automatically enroled, you can choose a custom starting and end date. 
+If your unit is not running on a regular teaching period, or you do not want students to be automatically enrolled, you can choose a custom starting and end date.
 
-### These dates reflect only when the unit will be available for enroled students to submit tasks. Units are permanently visible to students as long as they have the associated email, regardless of start or end date. 
+These dates reflect only when the unit will be available for enrolled students to submit tasks. Units are permanently visible to students as long as they have the associated email, regardless of start or end date.
 
 #### Portfolio Auto-Generation Date
 
-Students are commonly instructed to submit their portfolio with a "Learning Summary" when completing the unit. It is the portfolio that gets graded so if a student does not submit their portfolio they might not get a grade. If you want all portfolios to be created automatically so they can be graded, even if a student forgets to submit it, you can activate this auto-generated feature.
+Students are commonly instructed to submit their portfolio with a "Learning Summary" when completing the unit. It is the portfolio that gets graded so if a student does not submit their portfolio they might not get a grade. If you want all portfolios to be created automatically, so they can be graded, even if a student forgets to submit it, you can activate this auto-generated feature.
 
 #### Allow Student Extensions
 

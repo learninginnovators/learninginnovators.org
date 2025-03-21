@@ -1,5 +1,7 @@
-
-## Learning Outcomes
+---
+title: Learning Outcomes
+description: Configuring learning outcomes in OnTrack
+---
 
 In this tab you can add the learning outcomes of your unit if you want students to reflect after submitting each task on how it aligns with these learning outcomes.
 

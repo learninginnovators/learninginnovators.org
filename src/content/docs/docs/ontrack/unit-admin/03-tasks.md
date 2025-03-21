@@ -1,6 +1,7 @@
-
-
-## Tasks
+---
+title: Tasks
+description: Setup the learning path for your students
+---
 
 Under "Tasks" you will be able to add your tasks following these steps:
 

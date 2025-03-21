@@ -1,5 +1,7 @@
-
-## Students
+---
+title: Students
+description: Enrol and withdraw students from your unit
+---
 
 Students will be automatically enrolled on day 2 of week 0 by OnTrack syncing with Calista.
 
