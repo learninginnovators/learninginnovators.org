@@ -17,7 +17,7 @@ For a teaching period, in Week O, when OnTrack connects with other university sy
 For a custom period, 
 ### Andrew please add what happens for custom periods
 
-If you would like to enrol students before the system does it automatically, or unenrol students, for example when a unit code is incorrectly added and the wrong students have been automatically enroled, this can be done through the "Students" tab. Instructions on how to do this can be found in that section of this guide.
+If you would like to enrol students before the system does it automatically (on the second day of week 0), or unenrol students (for example when a unit code is incorrectly added and the wrong students have been automatically enroled), this can be done through the "Students" tab. Instructions on how to do this can be found in the "Students" section of this guide.
 
 ### Andrew If the cvs is updated will the system override this when it syncs with the system again?
 
@@ -57,11 +57,21 @@ Students are commonly instructed to submit their portfolio with a "Learning Summ
 
 #### Allow students to Change Tutorial
 
+Selecting this feature will allow students to change tutorials at any time.
+
+If you want students to be able to add themselves to tutorials or change tutorials freely, you also need to write "-1" under "Capacity" when creating the tutorial.
+
+If you do not want students to be able to change into some tutorials or enrol themselves in these but not in others, select this feature and just add a specific number under "Capacity" when creating that tutorial.
+
 #### Send Notification Emails
 
 #### Synchronise Enrolments
 
+Selecting this feature will allow the system to automatically enrol students from Calista, starting on day 2 week 0. This information is refreshed every day at midnight, so new enrolments and discontinuing students will be updated automatically.
+
 #### Synchronise Timetable
+
+Selecting this feature will allow OnTrack to automatically create any workshops or classes associated with the unit, and enrol students accordingly. You can find and delete or change this information under "Tutorials".
 
 #### Overseer Assessment
 
@@ -69,6 +79,25 @@ Students are commonly instructed to submit their portfolio with a "Learning Summ
 
 #### Active
 
+If you unselect this option, students and tutors will not see the unit in their OnTrack dashboard, even if enrolled.
+
+A unit in OnTrack will be visible to students as soon as they are enrolled in it. To confirm who is enrolled go to "Students" tab. The system automatically enrols students from Calista, starting on day 2 week 0.
+
+A unit in OnTrack will be visible to tutors the moment you add them under the "Staff" tab.
+
+
 ### Creating a new unit
 
+To create a new unit click on the badge icon on the top right hand corner and select "Manage units". On this page (see image below) you will see a blue icon labeled "+ Create Unit", click on it nd you will get an empty site where you can add all the informaation of the new unit you are creating.
+
+<img width="825" alt="Screenshot 2025-03-21 at 11 32 20 am" src="https://github.com/user-attachments/assets/cc06297b-52cd-49ca-8b3b-36d2bd87ab8e" />
+
+
 ### Making a copy of a previous unit iteration
+
+There are two ways of doing this, one is through the "Unit details" tab. In the bottom right corner you will see a green icon labelled "Copy". This is what you will see when you click on it:
+
+<img width="898" alt="Screenshot 2025-03-21 at 12 46 01 pm" src="https://github.com/user-attachments/assets/9e055c55-d5a2-4f71-8b17-a1f036d9f864" />
+
+Just fill in the details and click on "Create Unit" on the bottom right.
+ 
