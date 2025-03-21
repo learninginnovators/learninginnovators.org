@@ -4,12 +4,13 @@
 
 Under "Tasks" you will be able to add your tasks following these steps:
 
-Click on the blue "Add Task" icon and you will get the spaces to fill in the information your task.
+Click on the blue "Add Task" icon and you will get the spaces to fill in the information your task:
+
 <img width="936" alt="Screenshot 2025-03-21 at 4 36 25 pm" src="https://github.com/user-attachments/assets/40ba0724-cb12-4dbe-b7b3-165fc070657f" />
 
 ### Note:
 
-Remeber to always save by clicking the blue icon at the bottom right of the page. Also, you need to save before updating any task documents.
+Remember to always save by clicking the blue icon at the bottom right of the page. Also, you need to save before uploading any task documents.
 
 ### 1. Task details
 
