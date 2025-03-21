@@ -14,11 +14,11 @@ Remember to always save by clicking the blue icon at the bottom right of the pag
 
 ### 1. Task details
 
-Choose the task achievement level (Pass, Credit...).
+Choose the task achievement level aligned to this task: Pass, Credit, Distinction or High Distinction. (In the non recommended case where you want to be able to grade a task, you can choose this option under (8) Optional settings.)
 
-Label it with an abbreviation that includes week, sequence and grade eg. 1.1P
+Label the task with an abbreviation that includes week, sequence and grade eg. 1.1P
 
-You can choose to assign a weight to the task based on the effort that it takes as compared to other tasks. This is only to provide students' with this information, it does not affect anything else.
+You can choose to assign a weight to the task based on the effort that it takes as compared to other tasks. This is only to provide students' an indication of the time/effort it takes, it does not affect anything else.
 
 Choose a descriptive name for the task, eg. Module review 1.
 
