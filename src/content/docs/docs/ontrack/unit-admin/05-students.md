@@ -28,7 +28,7 @@ There are two ways of assigning students to tutorials.
 
 You can enroll students in a tutorial by choosing the tutorial from the drop down under the student's information as shown in the picture. In this Unit we created the tutorial stream "Assessment" and the tutorial Abbreviation "P1", in other units there might be more tutorial streams and tutorials. They will all come up in the drop down menu.
 
-3. #### Through the csv
+2. #### Through the csv
 
 <img width="832" alt="Screenshot 2025-03-24 at 9 58 56 am" src="https://github.com/user-attachments/assets/08b5e3f8-d18b-4f1d-a5ae-42337bd26792" />
 
