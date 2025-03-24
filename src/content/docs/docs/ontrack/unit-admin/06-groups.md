@@ -30,4 +30,4 @@ To manage students in a group, first you need to ensure your unit has group sets
    ![Adding Students to Group](./images/create-manage-student-groups/adding-members.png)
 
 #### Note:
-    You can also export and import CSV files for batch group allocation. To view the correct format of the CSV file for import, you can export the CSV by selecting "Download CSV".
+You can also export and import CSV files for batch group allocation. To view the correct format of the CSV file for import, you can export the CSV by selecting "Download CSV".
