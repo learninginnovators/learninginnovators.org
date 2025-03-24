@@ -12,15 +12,14 @@ Under "Code" the unit code assigned by the University is required. If more than 
 
 <!-- TODO: I think this should move to the student tab -->
 
-For a teaching period, in Week O, when OnTrack connects with other university systems, students enrolled in the unit will be automatically enrolled into the unit in OnTrack through this code. From then on, every night, student enrolments will be updated, so any changes in student enrolments will be reflected in OnTrack.
+For a teaching period, in Week 0, when OnTrack connects with other university systems, students enrolled in the unit will be automatically enrolled into the unit in OnTrack through this code. From then on, every night, student enrolments will be updated, so any changes in student enrolments will be reflected in OnTrack.
 
 For a custom period, you will need to manually enrol students. Instructions on how to do this can be found in the "Students" section of this guide.
 
 If you would like to enrol students before the system does it automatically (on the second day of week 0), or un-enrol students (for example when a unit code is incorrectly added and the wrong students have been automatically enrolled), this can be done through the "Students" tab. Instructions on how to do this can be found in the "Students" section of this guide.
 
-<!-- ### Andrew If the cvs is updated will the system override this when it syncs with the system again?
-Sync will enrol or withdraw students who have enrolled or withdrawn - so it wont remove other students you add.
- -->
+Note that the sync will enrol or withdraw students who have enrolled or withdrawn - so it wont remove other students you add.
+
 
 #### Name
 
@@ -34,7 +33,7 @@ Under "Description" you can add the description of the unit.
 
 Under "Teaching Period" you can choose the trimester or teaching period the unit is running in. 
 
-The teaching period is created by the adminsitrator of the system, if you cannot find the appropriate one from the drop down menu, or the dates are incorrect, please contact the Learning Innovation team. 
+The teaching period is created by the adminsitrator of the system, if you cannot find the appropriate one from the drop down menu, or the dates are incorrect, please contact your Learning Innovation team. 
 
 #### Draft Learning Summary
 
@@ -60,15 +59,11 @@ Students are commonly instructed to submit their portfolio with a "Learning Summ
 
 Selecting this feature will allow students to change tutorials at any time.
 
-If you want students to be able to add themselves to tutorials or change tutorials freely, you also need to write "-1" under "Capacity" when creating the tutorial.
-
-If you do not want students to be able to change into some tutorials or enrol themselves in these but not in others, select this feature and just add a specific number under "Capacity" when creating that tutorial.
-
 #### Send Notification Emails
 
 #### Synchronise Enrolments
 
-Selecting this feature will allow the system to automatically enrol students from Calista, starting on day 2 week 0. This information is refreshed every day at midnight, so new enrolments and discontinuing students will be updated automatically.
+Selecting this feature will allow the system to automatically enrol students from Callista, starting on day 2 week 0. This information is refreshed every day at midnight, so new enrolments and withdrawn students will be updated automatically.
 
 #### Synchronise Timetable
 
@@ -82,7 +77,7 @@ Selecting this feature will allow OnTrack to automatically create any workshops 
 
 If you unselect this option, students and tutors will not see the unit in their OnTrack dashboard, even if enrolled.
 
-A unit in OnTrack will be visible to students as soon as they are enrolled in it. To confirm who is enrolled go to "Students" tab. The system automatically enrols students from Calista, starting on day 2 week 0.
+A unit in OnTrack will be visible to students as soon as they are enrolled in it. To confirm who is enrolled go to "Students" tab. The system automatically enrols students from Callista, starting on day 2 week 0.
 
 A unit in OnTrack will be visible to tutors the moment you add them under the "Staff" tab.
 
