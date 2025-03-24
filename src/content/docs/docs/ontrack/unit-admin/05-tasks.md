@@ -11,7 +11,7 @@ Click on the blue "Add Task" icon and you will get the spaces to fill in the inf
 
 ### Note:
 
-Remember to always save by clicking the blue icon at the bottom right of the page. Also, you need to save before uploading any task documents.
+You can also export and import CSV files for batch task creation. To view the correct format of the CSV file for import, you can export the CSV by selecting Download CSV. You can then upload all the task descriptions and resources in a zip. file.
 
 ### 1. Task details
 
