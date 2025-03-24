@@ -9,9 +9,7 @@ Click on the blue "Add Task" icon and you will get the spaces to fill in the inf
 
 <img width="936" alt="Screenshot 2025-03-21 at 4 36 25 pm" src="https://github.com/user-attachments/assets/40ba0724-cb12-4dbe-b7b3-165fc070657f" />
 
-#### NOTE:
-
-You can also export and import CSV files for batch task creation. To view the correct format of the CSV file for import, you can export the CSV by selecting Download CSV. You can then upload all the task descriptions and resources in a zip. file.
+#### NOTE: You can also export and import CSV files for batch task creation. To view the correct format of the CSV file for import, you can export the CSV by selecting Download CSV. You can then upload all the task descriptions and resources in a zip. file.
 
 ### 1. Task details
 
