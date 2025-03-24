@@ -15,7 +15,7 @@ If you want someone to be able to make changes and access all the information in
 
 Assign the Unit chair to the main convenor role by selecting the respective box.
 
-If you can't change someone's role to convenor it is because they don't have that level of access. Ask an administrator to provide that level of access to that staff member.
+If you can't change someone's role to convenor it is because they don't have that level of access. Ask an administrator in your Learning Innovations team to provide that level of access to that staff member if required.
 
 You can delete staff at any point, except whoever is labelled as main convenor. If you want to delete that staff member from the list you first need to pass the main convenor role to another convenor.
 
