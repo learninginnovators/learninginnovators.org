@@ -25,13 +25,57 @@ Choose a descriptive name for the task, eg. Module review 1.
 
 Add a task description.
 
-### 2. Description
+### 2. Inbox
+
+<img width="1159" alt="Screenshot 2025-03-24 at 10 12 45 am" src="https://github.com/user-attachments/assets/5055effe-1b20-4a48-b0b0-0fc484185247" />
+
+Here you assign which tutorial stream will be used as the marking one. 
+
+If you have assigned tutors to tutorials and tutorials to students but your tutors can't see any students this is what is missing! Ensure the tutorial stream assigned to marking is the right one.
+
+If you call a tutorial stream "Assessment" it will automatically be set as the marking tutorial.
+
 
 ### 3. Due dates
 
+Students have access to the unit's OnTrack site from the moment their email is added to it. But the timelines for submitting each specific task are set here.
+
+1. From start date to suggested completion date: students can submit an assignment for feedback. 
+
+Students see the dates in this format, with suggested completion date expressed as due date:
+
+<img width="543" alt="Screenshot 2025-03-24 at 10 32 57 am" src="https://github.com/user-attachments/assets/3f11e847-e17a-417d-bb55-0ca0de58e457" />
+
+2. Between suggested completion date and deadline: students can submit their assignment but will get an automatic "time limit exceeded". Tutors can choose not to provide feedback from this point.
+
+If students submit their work at this point, this is the message they receive:
+
+<img width="875" alt="Screenshot 2025-03-24 at 10 34 18 am" src="https://github.com/user-attachments/assets/3117fc35-e8a3-4b5d-8835-d9095e7771a7" />
+
+3. Deadline: once the deadline time is hit, students will not be able to submit this task anymore. They will have to include it directly in their portfolio at the end of the teaching period. 
+
+
 ### 4. Upload requirements
 
+For students to be able to upload their submission for a task, you need to specify what type of file they need to submit and what they need to name the file. 
+
+There are three types of files students can submit:
+
+### 1. image -  ANDREW fill this please
+
+2. document - pdf only
+
+Turnitin can be set for checking document similarity in document submissions. 
+
+3. code - C, C#, C++ or python
+
+Moss can be used to check similarity in code submissions.
+
+<img width="1129" alt="Screenshot 2025-03-24 at 10 43 14 am" src="https://github.com/user-attachments/assets/cd61ccf0-8dfa-4b44-aecd-9ec553a87847" />
+
+
 ### 5. Task description and resources
+
 
 ### 6. Task assessment automation
 
