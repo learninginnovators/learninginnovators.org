@@ -51,15 +51,20 @@ Students are commonly instructed to submit their portfolio with a "Learning Summ
 
 #### Allow Student Extensions
 
+#### ANDREW fill this please
+
 #### Extension Duration on Resubmit
+#### ANDREW fill this please
 
 #### Auto Apply Extensions
+#### ANDREW fill this please
 
 #### Allow students to Change Tutorial
 
 Selecting this feature will allow students to change tutorials at any time.
 
 #### Send Notification Emails
+#### ANDREW fill this please
 
 #### Synchronise Enrolments
 
@@ -70,8 +75,10 @@ Selecting this feature will allow the system to automatically enrol students fro
 Selecting this feature will allow OnTrack to automatically create any workshops or classes associated with the unit, and enrol students accordingly. You can find and delete or change this information under "Tutorials".
 
 #### Overseer Assessment
+#### ANDREW fill this please
 
 #### Docker Image Name
+#### ANDREW fill this please
 
 #### Active
 
