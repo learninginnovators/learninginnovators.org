@@ -55,5 +55,4 @@ Inside each group set you can then add the different student groups. If you set 
 
 
 
-#### Note:
-You can also export and import CSV files for batch group allocation. To view the correct format of the CSV file for import, you can export the CSV by selecting "Download CSV".
+#### Note: You can also export and import CSV files for batch group allocation. To view the correct format of the CSV file for import, you can export the CSV by selecting "Download CSV".
