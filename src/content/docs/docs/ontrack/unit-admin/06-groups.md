@@ -21,13 +21,13 @@ Inside each group set you can then add the different student groups. If you set 
 
 <img width="962" alt="Screenshot 2025-03-24 at 6 52 06 pm" src="https://github.com/user-attachments/assets/579438a9-b492-47eb-99ee-118e5cf2080b" />
 
-   a. Under **Name** Write the name of the group set, by default this is called "Group Work" but you can change this name.
+    a. Under Name write the name of the group set, by default this is called "Group Work" but you can change this name.
    
-   b. Under **Create Groups** Choose who will be able to create new groups in the group work set. The drop down menu allows you to select either staff only or staff and students.
+    b. Under Create Groups choose who will be able to create new groups in the group work set. The drop down menu allows you to select either staff only or staff and students.
    
-   c. Under **Manage Groups** Choose who will be able to manage student groups in this group work set. The drop down menu allows you to select either staff only or staff and students. 
+    c. Under Manage Groups choose who will be able to manage student groups in this group work set. The drop down menu allows you to select either staff only or staff and students. 
    
-   d. Under **Restrict to Tutorials** Choose who will be able to form groups. The drop down menu allows you to select either same tutorial or any tutorial.
+    d. Under Restrict to Tutorials choose who will be able to form groups. The drop down menu allows you to select either same tutorial or any tutorial.
  
 3. Save!
    
@@ -43,11 +43,11 @@ Inside each group set you can then add the different student groups. If you set 
 <img width="962" alt="Screenshot 2025-03-24 at 7 20 09 pm" src="https://github.com/user-attachments/assets/4ef5d815-69ef-42d8-bb91-cc16bb21d1ee" />
 
 
-   a. Under **Name** Write the name of the group.
+    a. Under Name write the name of the group.
    
-   b. Under **Tutorial** Choose tutorials.
+    b. Under Tutorial choose tutorials.
    
-   c. Under **Capacity Adjustment** Choose how many students each group can have.
+    c. Under Capacity Adjustment choose how many students each group can have.
  
 3. Add students to the group by typing the student name:
 
