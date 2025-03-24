@@ -9,7 +9,7 @@ Click on the blue "Add Task" icon and you will get the spaces to fill in the inf
 
 <img width="936" alt="Screenshot 2025-03-21 at 4 36 25 pm" src="https://github.com/user-attachments/assets/40ba0724-cb12-4dbe-b7b3-165fc070657f" />
 
-### Note:
+#### NOTE:
 
 You can also export and import CSV files for batch task creation. To view the correct format of the CSV file for import, you can export the CSV by selecting Download CSV. You can then upload all the task descriptions and resources in a zip. file.
 
@@ -31,9 +31,7 @@ Add a task description.
 
 Here you assign which tutorial stream will be used as the marking one. 
 
-If you have assigned tutors to tutorials and tutorials to students but your tutors can't see any students this is what is missing! Ensure the tutorial stream assigned to marking is the right one.
-
-If you call a tutorial stream "Assessment" it will automatically be set as the marking tutorial.
+#### NOTE: If you have assigned tutors to tutorials and tutorials to students but your tutors can't see any students this is what is missing! Ensure the tutorial stream assigned to marking is the right one.
 
 
 ### 3. Due dates
