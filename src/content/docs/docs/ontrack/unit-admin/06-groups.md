@@ -44,7 +44,9 @@ Inside each group set you can then add the different student groups. If you set 
 
 
    Under **Name** Write the name of the group.
+   
    Under **Tutorial** Choose tutorials.
+   
    Under **Capacity Adjustment** Choose how many students each group can have.
  
 3. Add students to the group by typing the student name:
