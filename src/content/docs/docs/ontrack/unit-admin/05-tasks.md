@@ -5,11 +5,13 @@ description: Setup the learning path for your students
 
 Under "Tasks" you will be able to add your tasks following these steps:
 
-Click on the blue "Add Task" icon and you will get the spaces to fill in the information your task:
+Click on the blue "Add Task" icon, and you will get the spaces to fill in the information your task:
 
 <img width="936" alt="Screenshot 2025-03-21 at 4 36 25 pm" src="https://github.com/user-attachments/assets/40ba0724-cb12-4dbe-b7b3-165fc070657f" />
 
-#### NOTE: You can also export and import CSV files for batch task creation. To view the correct format of the CSV file for import, you can export the CSV by selecting Download CSV. You can then upload all the task descriptions and resources in a zip. file.
+:::note
+You can also export and import CSV files for batch task creation. To view the correct format of the CSV file for import, you can export the CSV by selecting Download CSV. You can then upload all the task descriptions and resources in a zip file.
+:::
 
 ### 1. Task details
 
@@ -29,8 +31,9 @@ Add a task description.
 
 Here you assign which tutorial stream will be used as the marking one. 
 
-#### NOTE: If you have assigned tutors to tutorials and tutorials to students but your tutors can't see any students this is what is missing! Ensure the tutorial stream assigned to marking is the right one.
-
+:::note
+If you have assigned tutors to tutorials and tutorials to students, but your tutors can't see any students this is what is missing! Ensure the tutorial stream assigned to marking is the right one.
+:::
 
 ### 3. Due dates
 
@@ -42,32 +45,31 @@ Students see the dates in this format, with suggested completion date expressed 
 
 <img width="543" alt="Screenshot 2025-03-24 at 10 32 57 am" src="https://github.com/user-attachments/assets/3f11e847-e17a-417d-bb55-0ca0de58e457" />
 
-
 2. Between suggested completion date and deadline: students can submit their assignment but will get an automatic "time limit exceeded". Tutors can choose not to provide feedback from this point.
 
 If students submit their work at this point, this is the message they receive:
 
 <img width="875" alt="Screenshot 2025-03-24 at 10 34 18 am" src="https://github.com/user-attachments/assets/3117fc35-e8a3-4b5d-8835-d9095e7771a7" />
 
-
 3. Deadline: once the deadline time is hit, students will not be able to submit this task anymore. They will have to include it directly in their portfolio at the end of the teaching period. 
 
 
 ### 4. Upload requirements
 
-For students to be able to upload their submission for a task, you need to specify what type of file they need to submit and what they need to name the file. 
+For students to be able to upload their submission for a task, you need to specify the number and type of files they need to submit. For each file, you specify the name of the file and the type of file that needs to be uploaded.
 
 There are three types of files students can submit:
 
-### 1. image -  ANDREW fill this please
+1. *image* - the student can upload an image file in a wide range of formats.
+2. *document* - documents need to be uploaded as pdf. The pdf must not be encrypted or locked.
 
-2. document - pdf only
+    Turnitin can be set for checking document similarity in document submissions as can be observed in the image below. 
 
-Turnitin can be set for checking document similarity in document submissions as can be observed in the image below. 
+3. *code* - the student can upload a text file containing the source code.
 
-3. code - C, C#, C++ or python
+    Syntax highlighting is supported for a wide range of languages, and code similarity checking is supported for C, C#, C/C++, and Python. Moss can be used to check similarity in code submissions as can be observed in the image below.
 
-Moss can be used to check similarity in code submissions as can be observed in the image below.
+    Jupyter notebooks are also supported, but files must be self-contained and only use basic formatting features in markdown cells.
 
 <img width="1129" alt="Screenshot 2025-03-24 at 10 43 14 am" src="https://github.com/user-attachments/assets/cd61ccf0-8dfa-4b44-aecd-9ec553a87847" />
 
@@ -78,19 +80,27 @@ Moss can be used to check similarity in code submissions as can be observed in t
 
 Before uploading your documents save the task by selecting the blue symbol on the bottom right of the page. If you don't do this you might not be able to upload the documents.
 
-Here you will upload the pdf with the task description and any other resources students need to complete the task eg. templates.
+Here you will upload the pdf with the task description and a zip file containing any other resources students need to complete the task. For example, you can use the resources to provide students with templates or starting work that they need to build upon.
 
 For task description you can only upload one single pdf.
 
-In resources you can upload multiple documents, images and code compressed in a zip. file. Even if you only have one document to upload as resources you need to compress it into a zip file before uploading it. 
+In resources, you can upload multiple documents, images and code compressed in a zip. file. Even if you only have one document to upload as resources you need to compress it into a zip file before uploading it.
 
 ### 6. Task assessment automation
 
-#### ANDREW fill this please
+You can provide automated scripts to check student work on submission.
+
+Details coming soon.
+
+<!-- TODO: Add details-->
 
 ### 7. SCORM test
 
-#### ANDREW fill this please
+SCORM packages can be included to run within the submission process. For example, [Numbas](https://www.google.com/search?client=safari&rls=en&q=numbas&ie=UTF-8&oe=UTF-8) tests can be used to test student ability to complete a set of questions prior to submission of the task.
+
+Details coming soon.
+
+<!-- TODO: Add details -->
 
 ### 8. Optional settings
 

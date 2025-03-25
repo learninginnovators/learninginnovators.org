@@ -7,7 +7,10 @@ This image shows all the information required in the unit details tab of an OnTr
 
 <img width="765" alt="Screenshot 2025-03-05 at 5 37 07 pm" src="https://github.com/user-attachments/assets/28096f4b-ddac-415a-8bcd-21c12fe8741e" />
 
-#### Code
+## Field Details
+
+### Code
+
 Under "Code" the unit code assigned by the University is required. If more than a unit should share an OnTrack site, both codes should be included in this space using the following sample format: "DKN000/DKN999".
 
 <!-- TODO: I think this should move to the student tab -->
@@ -20,87 +23,96 @@ If you would like to enrol students before the system does it automatically (on 
 
 Note that the sync will enrol or withdraw students who have enrolled or withdrawn - so it wont remove other students you add.
 
-
-#### Name
+### Name
 
 Under "Name" the name of the unit is required.
 
-#### Description
+### Description
 
 Under "Description" you can add the description of the unit.
 
-#### Teaching Period
+### Teaching Period
 
 Under "Teaching Period" you can choose the trimester or teaching period the unit is running in. 
 
 The teaching period is created by the adminsitrator of the system, if you cannot find the appropriate one from the drop down menu, or the dates are incorrect, please contact your Learning Innovation team. 
 
-#### Draft Learning Summary
+### Draft Learning Summary
 
 At the end of the teaching period, a student must submit their portfolio together with a "Learning Summary". If the learning summary is included as a task in your unit, you can choose it from the drop down menu here to indicate this.
 
-#### Start Date and End date
+### Start Date and End date
 
 If your unit is not running on a regular teaching period, or you do not want students to be automatically enrolled, you can choose a custom starting and end date.
 
 These dates reflect only when the unit will be available for enrolled students to submit tasks. Units are permanently visible to students as long as they have the associated email, regardless of start or end date.
 
-#### Portfolio Auto-Generation Date
+### Portfolio Auto-Generation Date
 
 Students are commonly instructed to submit their portfolio with a "Learning Summary" when completing the unit. It is the portfolio that gets graded so if a student does not submit their portfolio they might not get a grade. If you want all portfolios to be created automatically, so they can be graded, even if a student forgets to submit it, you can activate this auto-generated feature.
 
-#### Allow Student Extensions
+### Allow Student Extensions
 
-#### ANDREW fill this please
+This option is enabled by default, and will allow students to request extensions to their tasks. Extensions can extend the time for the task from the due date to the deadline date specified in the task definition.
 
-#### Extension Duration on Resubmit
-#### ANDREW fill this please
+### Extension Duration on Resubmit
 
-#### Auto Apply Extensions
-#### ANDREW fill this please
+Set the number of weeks extensions added to a task when it is placed in the "Fix and Resubmit" status. This will be applied each time the task is assessed as needing to be fixed, but will only extend the time to the task's deadline.
 
-#### Allow students to Change Tutorial
+### Auto Apply Extensions
+
+This option is enabled by default, and allows students to adjust the due date of tasks up to the deadline without needing staff to review and grant the extension application.
+
+### Allow students to Change Tutorial
 
 Selecting this feature will allow students to change tutorials at any time.
 
-#### Send Notification Emails
-#### ANDREW fill this please
+### Send Notification Emails
 
-#### Synchronise Enrolments
+Each week, OnTrack will send email updates to staff and students. This option can be turned off to exclude this unit from that process.
 
-Selecting this feature will allow the system to automatically enrol students from Callista, starting on day 2 week 0. This information is refreshed every day at midnight, so new enrolments and withdrawn students will be updated automatically.
+### Synchronise Enrolments
 
-#### Synchronise Timetable
+Selecting this feature will allow the system to automatically enrol students from the institutions configured student management system, starting on day 2 of week 0. This information is refreshed every day at midnight, so new enrolments and withdrawn students will be updated automatically.
+
+### Synchronise Timetable
 
 Selecting this feature will allow OnTrack to automatically create any workshops or classes associated with the unit, and enrol students accordingly. You can find and delete or change this information under "Tutorials".
 
-#### Overseer Assessment
-#### ANDREW fill this please
+### Overseer Assessment
 
-#### Docker Image Name
-#### ANDREW fill this please
+You can provide automated scripts to check student work on submission.
 
-#### Active
+Details coming soon.
+
+<!-- TODO: Add details-->
+
+### Docker Image Name
+
+This indicates the Docker container within which the automated scripts will run on student submissions.
+
+Details coming soon.
+
+<!-- TODO: Add details-->
+
+### Active
 
 If you unselect this option, students and tutors will not see the unit in their OnTrack dashboard, even if enrolled.
 
-A unit in OnTrack will be visible to students as soon as they are enrolled in it. To confirm who is enrolled go to "Students" tab. The system automatically enrols students from Callista, starting on day 2 week 0.
+A unit in OnTrack will be visible to students as soon as they are enrolled in it. To confirm who is enrolled go to "Students" tab. The system automatically enrols students from the institution's student management system, starting on day 2 of week 0.
 
 A unit in OnTrack will be visible to tutors the moment you add them under the "Staff" tab.
 
+## Creating a new unit
 
-### Creating a new unit
-
-To create a new unit click on the badge icon on the top right hand corner and select "Manage units". On this page (see image below) you will see a blue icon labeled "+ Create Unit", click on it nd you will get an empty site where you can add all the informaation of the new unit you are creating.
+To create a new unit click on the badge icon on the top right-hand corner and select "Manage units". On this page (see image below) you will see a blue icon labelled "+ Create Unit", click on it, and you will get an empty site where you can add all the information of the new unit you are creating.
 
 <img width="825" alt="Screenshot 2025-03-21 at 11 32 20 am" src="https://github.com/user-attachments/assets/cc06297b-52cd-49ca-8b3b-36d2bd87ab8e" />
 
-
-### Making a copy of a previous unit iteration
+## Copy a unit
 
 There are two ways of doing this, one is through the "Unit details" tab. In the bottom right corner you will see a green icon labelled "Copy". This is what you will see when you click on it:
 
 <img width="898" alt="Screenshot 2025-03-21 at 12 46 01 pm" src="https://github.com/user-attachments/assets/9e055c55-d5a2-4f71-8b17-a1f036d9f864" />
 
-Just fill in the details and click on "Create Unit" on the bottom right.
- 
+This allows you to copy a unit into a future teaching period. Fill in the details and click on "Create Unit" on the bottom right. The system will copy all the details, excluding students and staff, to a new unit in that teaching period.
