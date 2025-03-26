@@ -45,13 +45,13 @@ Students see the dates in this format, with suggested completion date expressed 
 
 <img width="543" alt="Screenshot 2025-03-24 at 10 32 57 am" src="https://github.com/user-attachments/assets/3f11e847-e17a-417d-bb55-0ca0de58e457" />
 
-2. Between suggested completion date and deadline: students can submit their assignment but will get an automatic "time limit exceeded". Tutors can choose not to provide feedback from this point.
+2. After due date (suggested completion date): students can submit their assignment but will get an automatic "time limit exceeded". These tasks do not appear in inbox but can be found through "Task explorer". Tutors can choose not to provide feedback from this point.
 
 If students submit their work at this point, this is the message they receive:
 
 <img width="875" alt="Screenshot 2025-03-24 at 10 34 18 am" src="https://github.com/user-attachments/assets/3117fc35-e8a3-4b5d-8835-d9095e7771a7" />
 
-3. Deadline: once the deadline time is hit, students will not be able to submit this task anymore. They will have to include it directly in their portfolio at the end of the teaching period. 
+3. Between suggested completion date and deadline: students can resubmit tasks that have been marked as "fix and resubmit" after the due date (suggested completion date) without it being marked as "time exceeded" if you enable this. To enable this you need to go to the "Unit details" tab and set the number of weeks extensions to be added to a task when it is placed in this status. This will be applied each time the task is assessed as needing to be fixed, but will only extend the time to the task’s deadline.
 
 
 ### 4. Upload requirements
