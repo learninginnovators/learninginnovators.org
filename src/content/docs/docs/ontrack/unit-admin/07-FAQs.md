@@ -24,11 +24,13 @@ The most common causes for this are:
    
 You can find more information about these in the "Tasks" page.
 
-### Students submissions after "fix and resubmit" are marked directly as time exceeded and do not come up in my inbox
+### Students submissions after "fix and resubmit" do not come up in my inbox
 
-If a response to a "fix and resubmit" is submitted after the due date it will come up as time exceeded. 
+If a response to a "fix and resubmit" is submitted after the due date it will get an automatic “time limit exceeded” and will not come up in your inbox. You can still see it using "task explorer". 
 
-If you don't want this to happen, go to the "Unit details" tab and in the "Extension duration on resubmit" option, write the number of weeks you want students to have for resubmitting tasks without being marked as time exceeded. 
+If you don't want this to happen, go to the "Unit details" tab in your unit and activate the "Extension Duration on Resubmit" option. This will set the number of weeks extensions added to a task when it is placed in the “Fix and Resubmit” status. This will be applied each time the task is assessed as needing to be fixed, but will only extend the time to the task’s deadline.
+
+You can find more information on this on the "Unit Details" page.
 
 ### Students are getting time exceeded while resubmitting after "fix and resubmit"
 
