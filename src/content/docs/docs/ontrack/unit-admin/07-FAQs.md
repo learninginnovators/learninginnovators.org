@@ -1,5 +1,5 @@
 ---
-title: Frequently asked Question
+title: Frequently asked Questions
 description: Responses to FAQs
 ---
 
@@ -14,13 +14,11 @@ Ensure the tutorial stream assigned to marking the task is the right one. To do 
 
 ### Students can't submit a task
 
-The most common causes for this are:
-
-1. Upload requirements: For students to be able to upload their submission for a task, you need to specify the number and type of files they need to submit. For each file, you specify the name of the file and the type of file that needs to be uploaded.
+Double check the upload requirements of that task under the "Tasks" tab. For students to be able to upload their submission for a task, you need to specify the number and type of files they need to submit. For each file, you specify the name of the file and the type of file that needs to be uploaded.
 
 2. Deadline exceeded: Once the deadline time is hit, students will not be able to submit this task anymore. They will have to include it directly in their portfolio at the end of the teaching period.
 
-3. After the due date (between due date and deadline) students submissions will be marked as time exceeded and will not come up on your inbox. You are still able to see these tasks and mark them as completed or provide feedback but you have to access them through the "task explorer".
+3. After the due date, students' submissions will be marked as time exceeded and will not come up on your inbox. You are still able to see these tasks and mark them as completed or provide feedback but you have to access them through the "task explorer".
    
 You can find more information about these in the "Tasks" page.
 
