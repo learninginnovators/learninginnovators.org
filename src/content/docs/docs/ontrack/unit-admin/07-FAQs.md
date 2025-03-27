@@ -12,6 +12,12 @@ If the name of the staff you need to add does not come up in the drop-down list 
 
 Ensure the tutorial stream assigned to marking the task is the right one. To do this go to the "Tasks" tab, choose the assessment task and under (2) "Inbox" ensure this task is assigned to the right tutorial stream. More information on this under the "Tasks" page.
 
+### I can't upload the task description pdf when creating a task
+
+You need to create a task and save it, using the icon on the bottom right of the page, before you can upload any documents to it.
+
+If you save and it is still not uploading check the size of the file, it might be too big.
+
 ### Students can't submit a task
 
 Double check the upload requirements of that task under the "Tasks" tab. For students to be able to upload their submission for a task, you need to specify the number and type of files they need to submit. For each file, you specify the name of the file and the type of file that needs to be uploaded.
