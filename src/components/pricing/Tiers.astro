@@ -4,7 +4,7 @@ const pricingOptions = [
     plan: "Self Managed",
     price: "$0",
     priceContext: "always",
-    description: "Use our free open source platform and support yourself",
+    description: "Our platform is and will remain free and open source. You can host it yourself at no charge.",
     features: [
       {
         text: "OnTrack Software",
@@ -15,19 +15,15 @@ const pricingOptions = [
         icon: 'included',
       },
       {
-        text: "Community Support",
-        icon: 'included',
+        text: "Dedicated Support",
+        icon: 'excluded',
       },
       {
         text: "Managed Upgrades",
         icon: 'excluded',
       },
       {
-        text: "Staff Onboarding",
-        icon: 'excluded',
-      },
-      {
-        text: "End User Support",
+        text: "Cloud Hosted Solution",
         icon: 'excluded',
       },
       {
@@ -43,10 +39,11 @@ const pricingOptions = [
     buttonHoverBgColor: "bg-slate-100",
   },
   {
-    plan: "Base Partner",
-    price: "$10k",
+    plan: "Self-Hosted Partner",
+    pricePrefix: "from",
+    price: "$25k",
     priceContext: "/ year",
-    description: "Get technical support for the platform.",
+    description: "Get technical support for the platform on your servers.",
     features: [
       {
         text: "OnTrack Software",
@@ -56,8 +53,12 @@ const pricingOptions = [
         text: "Documentation",
         icon: 'included',
       },
+      // {
+      //   text: "Community Support",
+      //   icon: 'included',
+      // },
       {
-        text: "Community Support",
+        text: "Dedicated Support",
         icon: 'included',
       },
       {
@@ -65,17 +66,22 @@ const pricingOptions = [
         icon: 'included',
       },
       {
-        text: "Staff Onboarding",
-        icon: 'excluded',
-      },
-      {
-        text: "End User Support",
+        text: "Cloud Hosted Solution",
         icon: 'excluded',
       },
       {
         text: "Sponsor a Feature",
         icon: 'optional',
       },
+      
+      // {
+      //   text: "Staff Onboarding",
+      //   icon: 'excluded',
+      // },
+      // {
+      //   text: "End User Support",
+      //   icon: 'excluded',
+      // },
     ],
     bgColor: "bg-blue-300",
     textColor: "text-blue-950",
@@ -85,11 +91,11 @@ const pricingOptions = [
     buttonHoverBgColor: "bg-blue-600",
   },
   {
-    plan: "Supported Partner",
-    price: "$1",
-    priceContext: "/ student / offering",
-    description: "Go beyond software support and get support for your staff and students.",
-    disclaimer: "Minimum cost $10k per year",
+    plan: "Hosted Partner",
+    price: "Contact Us",
+    priceContext: "price / student",
+    description: "Get a fully managed cloud hosted solution with technical support.",
+    // disclaimer: "Minimum cost $10k per year",
     features: [
       {
         text: "OnTrack Software",
@@ -100,7 +106,7 @@ const pricingOptions = [
         icon: 'included',
       },
       {
-        text: "Community Support",
+        text: "Dedicated Support",
         icon: 'included',
       },
       {
@@ -108,24 +114,12 @@ const pricingOptions = [
         icon: 'included',
       },
       {
-        text: "Staff Onboarding",
-        icon: 'included',
-      },
-      {
-        text: "End User Support",
-        icon: 'included',
-      },
-      {
         text: "Cloud Hosted Solution",
-        icon: 'excluded',
+        icon: 'included',
       },
       {
         text: "Sponsor a Feature",
         icon: 'optional',
-      },
-      {
-        text: "Contribution Discounts",
-        icon: 'excluded',
       },
     ],
     bgColor: "bg-green-300",
@@ -134,65 +128,6 @@ const pricingOptions = [
     buttonText: "Learn More",
     buttonTextColor: "text-green-600",
     buttonHoverBgColor: "bg-green-300",
-  },
-  {
-    plan: "Premium Partner",
-    price: "$4",
-    priceContext: "/ student / offering",
-    description: "Collaborate closely to co-design and co-develop features and early access to new version.",
-    disclaimer: "Minimum cost $50k per year",
-    features: [
-      {
-        text: "OnTrack Software",
-        icon: 'included',
-      },
-      {
-        text: "Documentation",
-        icon: 'included',
-      },
-      {
-        text: "Community Support",
-        icon: 'included',
-      },
-      {
-        text: "Managed Upgrades",
-        icon: 'included',
-      },
-      {
-        text: "Staff Onboarding",
-        icon: 'included',
-      },
-      {
-        text: "End User Support",
-        icon: 'included',
-      },
-      {
-        text: "Cloud Hosted Solution",
-        icon: 'optional',
-      },
-      {
-        text: "Sponsor a Feature",
-        icon: 'optional',
-      },
-      {
-        text: "Contribution Discounts",
-        icon: 'included',
-      },
-      {
-        text: "Influence Roadmap",
-        icon: 'included',
-      },
-      {
-        text: "Co-design Enhancements",
-        icon: 'included',
-      },
-    ],
-    bgColor: "bg-yellow-300",
-    textColor: "text-yellow-950",
-    buttonBgColor: "bg-yellow-50",
-    buttonText: "Learn More",
-    buttonTextColor: "text-yellow-600",
-    buttonHoverBgColor: "bg-yellow-200",
   },
 ];
 ---
@@ -208,13 +143,13 @@ const pricingOptions = [
         approach, scale up as your requirements grow.
       </p>
     </div>
-    <div class="grid grid-cols-2 gap-2 mt-12 xl:grid-cols-4">
+    <div class="grid grid-cols-2 gap-2 mt-12 xl:grid-cols-3">
   {pricingOptions.map((option) => (
     <div class={`h-full p-8 ${option.bgColor} rounded-3xl`}>
       <div class={`flex flex-col w-full gap-8 text-3xl ${option.textColor} font-display`}>
         <span>{option.plan}</span>
         <div>
-          <span class="text-2xl lg:text-5xl order-last">{option.price} </span><span class="text-sm order-last">{option.priceContext}</span>
+          <span class="text-sm order-last">{option.pricePrefix}</span><span class="text-2xl lg:text-5xl order-last"> {option.price} </span><span class="text-sm order-last">{option.priceContext}</span>
         </div>
       </div>
       <p class={`mt-8 text-xl font-display ${option.textColor}`}>{option.description}</p>
