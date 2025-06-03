@@ -1,0 +1,102 @@
+---
+
+const features = [
+  {
+    feature: "OnTrack Software",
+    details: "The OnTrack Software is available via our GitHub repository, providing a robust platform for supporting student learning.",
+  },
+  {
+    feature: "Documentation",
+    details: "Documentation on how to use OnTrack is provided on our website. It includes guides, tutorials, and FAQs to help you navigate the software effectively.",
+  },
+  {
+    feature: "Sponsor a Feature",
+    details: "OnTrack is continuously evolving. You can sponsor the development of new features to enhance the platform's capabilities, ensuring it meets your specific needs.",
+  },
+  {
+    feature: "Bespoke Pedagogical Support",
+    details: "We offer tailored pedagogical support to help you integrate OnTrack into your teaching practices effectively. This includes personalized guidance and resources to help uplift your staff capability and maximize the software's impact on student learning.",
+  },
+  {
+    feature: "Technical Support",
+    details: "Our technical team is available to assist you with any issues related to the OnTrack software. Whether you need help with installation, troubleshooting, or general inquiries, we're here to help. For Supported Self-Hosted Partners, our technical support is designed to support your technical staff, ensuring they have the resources they need to maintain and optimize the software on your servers.",
+  },
+  {
+    feature: "Supported Upgrades",
+    details: "We will work with your support team to ensure that your instance of OnTrack is kept up-to-date with the latest features and improvements. This includes regular updates and enhancements to keep the software running smoothly.",
+  },
+  {
+    feature: "Funding Supports Ongoing Enhancements",
+    details: "Beyond support, your funding helps us continue to enhance the OnTrack software. We are committed to improving the platform based on user feedback and evolving educational needs.",
+  },
+  {
+    feature: "Cloud Hosted Solution",
+    details: "We offer a cloud-hosted solution for those who prefer not to manage the software on their own servers. This option provides a hassle-free experience, allowing you to focus on teaching while we handle the technical aspects.",
+  },
+];
+
+---
+
+
+<section>
+  <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl  lg:py-24">
+   <div >
+      <div class="max-w-3xl">
+        <h1
+          class="text-4xl font-semibold font-display text-blue-950 lg:text-6xl">
+         Feature Overview
+        </h1>
+        <p class="max-w-lg mt-4 text-slate-600 text-base ">
+            Explore the key features of our pricing options. Each feature is designed to enhance your experience with the OnTrack pedagogy and software, providing you with the tools and support you need to succeed.
+        </p>
+      </div>
+      <div
+        x-data="{
+        activeAccordion: '',
+        setActiveAccordion(id) {
+            this.activeAccordion = (this.activeAccordion == id) ? '' : id
+        }
+    }"
+        class="relative w-full  space-y-6 text-base mt-12 lg:mt-24 ">
+        {
+          features.map((template) => (
+            <>
+              <div
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
+          class="duration-200 ease-out cursor-pointer group"
+          x-cloak>
+          <button
+            @click="setActiveAccordion(id)"
+            class="flex items-center justify-between w-full text-lg lg:text-3xl text-blue-950 select-none font-display">
+            <span>{template.feature}</span>
+            <div
+              :class="{ 'rotate-90': activeAccordion==id }"
+              class="relative flex items-center justify-center w-2.5 h-2.5 duration-300 ease-out">
+              <div
+                class="absolute w-0.5 h-full bg-white group-hover:bg-slate-300 rounded-full">
+              </div>
+              <div
+                :class="{ 'rotate-90': activeAccordion==id }"
+                class="absolute w-full h-0.5 ease duration-500 bg-white group-hover:bg-slate-300 rounded-full">
+              </div>
+            </div>
+          </button>
+          <div x-show="activeAccordion==id" x-collapse x-cloak>
+            <div class="pt-0 pb-8 opacity-70">
+             {template.details}
+
+
+            </div>
+          </div>
+        </div>
+            </>
+          ))
+        }
+
+
+      </div>
+   </div>
+
+  </div>
+</section>
