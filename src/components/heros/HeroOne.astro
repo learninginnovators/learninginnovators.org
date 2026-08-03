@@ -1,39 +1,57 @@
 ---
-const images = [
+// const images = [
+//   {
+//     url: "/widget0.svg",
+//     rotation: "rotate-6",
+//   },
+//   {
+//     url: "/widget1.svg",
+//     rotation: "-rotate-12",
+//   },
+//   {
+//     url: "/widget2.svg",
+//     rotation: "rotate-6",
+//   },
+//   {
+//     url: "/widget3.svg",
+//     rotation: "-rotate-12",
+//   },
+// ];
+// const logos = [
+//   {
+//     url: "/brands/8.svg",
+//   },
+//   {
+//     url: "/brands/5.svg",
+//   },
+//   {
+//     url: "/brands/7.svg",
+//   },
+// ];
+
+const stats = [
   {
-    url: "/widget0.svg",
-    rotation: "rotate-6",
+    category: "Students",
+    count: "200,000+",
   },
   {
-    url: "/widget1.svg",
-    rotation: "-rotate-12",
+    category: "Institutions",
+    count: "5",
   },
   {
-    url: "/widget2.svg",
-    rotation: "rotate-6",
+    category: "Courses",
+    count: "800+",
   },
   {
-    url: "/widget3.svg",
-    rotation: "-rotate-12",
-  },
-];
-const logos = [
-  {
-    url: "/brands/8.svg",
-  },
-  {
-    url: "/brands/5.svg",
-  },
-  {
-    url: "/brands/7.svg",
+    category: "Educators",
+    count: "200+",
   },
 ];
 ---
 
 <section>
-  <div
-    class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pb-24 lg:pt-12">
-    <div class="hidden lg:grid mt-12 lg:grid-cols-4">
+  <div class="relative px-8 pt-12 pb-8 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-24 lg:pb-12">
+    <!-- <div class="hidden lg:grid mt-12 lg:grid-cols-4">
       {
         images.map((image) => (
           <img
@@ -43,18 +61,30 @@ const logos = [
           />
         ))
       }
-    </div>
+    </div> -->
     <div class="lg:mt-12">
       <h1 class="text-4xl font-semibold font-display text-blue-950 sm:text-6xl">
-        Unleash your own potential <span class="lg:block"
-          >through seamless online learning.</span
-        >
+        Education re-imagined
       </h1>
       <p class="mt-4 text-slate-600 text-base max-w-2xl">
-        Embark on a journey of endless discovery, where the vast expanse of
-        knowledge intertwines with opportunities for profound personal growth.
+        Learning Innovators was founded by a group of passionate educators dedicated to sharing the power of learner-centered assessment.
+        We drive innovative approaches to education, and support like-minded educators to empower their students through the adoption of student-centred, assessment-driven learning.
       </p>
-      <div class="mt-12 flex flex-col lg:flex-row lg:items-center w-full">
+    </div>
+      <dl
+      class="grid grid-cols-2 gap-x-2 gap-y-8 text-center md:grid-cols-4 mt-10">
+      {
+        stats.map((stat) => (
+          <div class="mx-auto flex flex-col gap-y-4 p-4 lg:p-8 rounded-3xl bg-blue-300 w-full">
+            <dt class="leading-7 text-slate-500">{stat.category}</dt>
+            <dd class="order-first text-l font-semibold tracking-tight text-blue-950 font-display sm:text-2xl">
+              {stat.count}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+      <!-- <div class="mt-12 flex flex-col lg:flex-row lg:items-center w-full">
         <div class="relative flex flex-col gap-2 md:flex-row">
           <a
             aria-label="your label"
@@ -102,7 +132,6 @@ const logos = [
           }
 
         </div>
-      </div>
-    </div>
+      </div> -->
   </div>
 </section>
