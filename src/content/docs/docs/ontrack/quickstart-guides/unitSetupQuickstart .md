@@ -23,9 +23,19 @@ When your OnTrack unit shell is first provisioned for a semester, configure your
 <img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/warningTimePeriods.png" /
 
 6. Disable Tutorial Switching: Ensure the checkbox "Allow students to change tutorial" is unticked.
-    Why: Keeping this ticked allows students to re-assign themselves between tutorial sections, disrupting attendance and TA assignment queues.
+Why: Keeping this ticked allows students to re-assign themselves between tutorial sections, disrupting attendance and TA assignment queues.
 
 <img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/changeTutorial.png" />
+
+7. (Optional) Customise Grade Descriptions:
+    If your unit requires non-standard grade names (e.g., High Distinction Plus), modify or append the standard grade names in the grade definition list.
+
+<img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/gradeDefinitions.png" />   
+
+    
+
+
+
    
 
 
