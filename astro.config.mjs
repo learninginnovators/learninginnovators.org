@@ -40,7 +40,7 @@ export default defineConfig({
     },
     sidebar: [
       {
-        label: "OnTrack Documentation",
+        label: "OnTrack Software",
         items: [
           {
             label: "Quickstart Guides",
