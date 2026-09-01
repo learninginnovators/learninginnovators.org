@@ -1,42 +1,12 @@
 ---
-// const images = [
-//   {
-//     url: "/widget0.svg",
-//     rotation: "rotate-6",
-//   },
-//   {
-//     url: "/widget1.svg",
-//     rotation: "-rotate-12",
-//   },
-//   {
-//     url: "/widget2.svg",
-//     rotation: "rotate-6",
-//   },
-//   {
-//     url: "/widget3.svg",
-//     rotation: "-rotate-12",
-//   },
-// ];
-// const logos = [
-//   {
-//     url: "/brands/8.svg",
-//   },
-//   {
-//     url: "/brands/5.svg",
-//   },
-//   {
-//     url: "/brands/7.svg",
-//   },
-// ];
-
 const stats = [
-  {
-    category: "Courses",
-    count: "800+",
-  },
   {
     category: "Students",
     count: "200,000+",
+  },
+  {
+    category: "Courses",
+    count: "800+",
   },
   {
     category: "Educators",
@@ -49,89 +19,43 @@ const stats = [
 ];
 ---
 
-<section>
-  <div class="relative px-8 pt-12 pb-8 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-24 lg:pb-12">
-    <!-- <div class="hidden lg:grid mt-12 lg:grid-cols-4">
-      {
-        images.map((image) => (
-          <img
-            src={image.url}
-            class={`rounded-3xl  ${image.rotation}  w-full `}
-            alt="#_"
-          />
-        ))
-      }
-    </div> -->
-    <div class="lg:mt-12">
-      <h1 class="text-4xl font-semibold font-display text-blue-950 sm:text-6xl">
+<section aria-labelledby="hero-heading">
+  <div
+    class="relative mx-auto max-w-7xl px-8 pb-12 pt-12 md:px-12 lg:px-32 lg:pb-16 lg:pt-24"
+  >
+    <div class="max-w-4xl lg:mt-12">
+      <h1
+        id="hero-heading"
+        class="mt-4 text-5xl font-semibold tracking-tight text-blue-950 font-display sm:text-6xl lg:text-7xl"
+      >
         Education re-imagined
       </h1>
-      <p class="mt-4 text-slate-600 text-base max-w-2xl">
+
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
         Learning Innovators was founded by a group of passionate educators dedicated to sharing the power of learner-centered assessment.
+      </p>
+
+      <p class="mt-4 max-w-3xl leading-7 text-slate-600">
         We drive innovative approaches to education, and support like-minded educators to empower their students through the adoption of student-centred approaches to learning.
       </p>
     </div>
-      <dl
-      class="grid grid-cols-2 gap-x-2 gap-y-8 text-center md:grid-cols-4 mt-10">
+
+    <dl
+      class="mt-12 grid grid-cols-2 gap-3 text-center md:grid-cols-4 lg:mt-16"
+      aria-label="Learning Innovators impact"
+    >
       {
         stats.map((stat) => (
-          <div class="mx-auto flex flex-col gap-y-4 p-4 lg:p-8 rounded-3xl bg-blue-200 w-full">
-            <dt class="leading-7 text-slate-800">{stat.category}</dt>
-            <dd class="order-first text-l font-semibold tracking-tight text-blue-950 font-display sm:text-2xl">
+          <div class="flex w-full flex-col rounded-3xl bg-blue-100 p-5 lg:p-8">
+            <dd class="text-2xl font-semibold tracking-tight text-blue-950 font-display sm:text-3xl">
               {stat.count}
             </dd>
+            <dt class="mt-2 text-sm leading-6 text-slate-700 sm:text-base">
+              {stat.category}
+            </dt>
           </div>
         ))
       }
     </dl>
-      <!-- <div class="mt-12 flex flex-col lg:flex-row lg:items-center w-full">
-        <div class="relative flex flex-col gap-2 md:flex-row">
-          <a
-            aria-label="your label"
-            title="link to your page"
-            href="https://buy.polar.sh/polar_cl_6UyhEnvG2ysaBiPi7GzTx6qgLB8Z8nw-EC1CBpAoPlo"
-            class="items-center inline-flex w-full focus:outline-disc bg-green-500 duration-500 focus:ring-2 focus:ring-green-600 focus:ring-offset-2 font-medium sm:w-auto h-12 hover:bg-green-600 justify-center px-6 py-1 rounded-full text-white text-center text-sm"
-            >Buy Enlightr</a
-          >
-          <a
-            aria-label="your label"
-            title="link to your page"
-            href="/"
-            class="items-center inline-flex w-full focus:outline-disc bg-green-50 duration-200 focus:ring-2 focus:ring-green-60 focus:ring-offset-2 font-medium sm:w-auto h-12 hover:bg-green-100 gap-3 justify-center px-6 py-1 rounded-full text-green-600 text-center text-sm"
-            >See all pages <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-circle-chevron-right"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.25"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                stroke="none"
-                d="M0 0h24v24H0z"
-                fill="none"
-              ></path>
-              <path d="M11 9l3 3l-3 3"></path>
-              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z"></path>
-            </svg></a
-          >
-        </div>
-        <div
-          class="grid justify-between grid-cols-3 sm:grid-cols-3 mt-12 lg:mt-0 lg:ml-auto">
-          {
-            logos.map((logo) => (
-              <img
-                src={logo.url}
-                class="h-8"
-                alt="#_"
-              />
-            ))
-          }
-
-        </div>
-      </div> -->
   </div>
 </section>
