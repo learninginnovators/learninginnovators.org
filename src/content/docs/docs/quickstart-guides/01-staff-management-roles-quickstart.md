@@ -12,7 +12,6 @@ Observer Toggle: Makes any role read-only (allows viewing settings and submissio
 Overflow Toggle: Enables staff to claim and give feedback on submissions waiting in the central overflow queue.
 Mentor Dropdown: Connects a senior staff member to a tutor for feedback moderation.
 
-
 ### Step-by-step instructions
 
 
@@ -22,17 +21,12 @@ Mentor Dropdown: Connects a senior staff member to a tutor for feedback moderati
 4. Assign privileges:
    1. Toggle Overflow Marking ON for TAs who will assist with late feedback.
 
-<img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/OverflowMarking.png" /
+![upload requirements](./images/OverflowMarking.png)
 
    2. Select a Mentor from the dropdown menu for junior TAs requiring feedback supervision.
 
-<img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/MentorSelection.png" /
+![upload requirements](./images/MentorSelection.png)
 
    3. Toggle Observer ON if adding visitors, auditing staff, or observers.
 
-   <img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/ObserverRole.png" /
-
-
->
-
- 
+![upload requirements](./images/ObserverRole.png)

@@ -13,7 +13,7 @@ Tasks represent individual learning activities. A student’s final portfolio in
 Enter the Task Name and Abbreviation/Sequence (e.g., 1.1 or Task 01).
 Select target Grade Level (Pass, Credit, Distinction, High Distinction).
 
-<img width="936" alt="task details" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/TaskDetails.png" />
+![task details](./images/TaskDetails.png)
 
 3. Upload Requirements:
 - Add file name
@@ -21,8 +21,7 @@ Select target Grade Level (Pass, Credit, Distinction, High Distinction).
 - Specify a filename (e.g., portfolio_piece.zip) – this can be used to refer to the files students have submitted within other OnTrack systems.
 - If you wish to have it scanned for plagiarism detection, toggle on Check Similarity and select your flag percentage.
 
-
-<img width="1159" alt="upload requirements" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/uploadRequirements.png" />
+![upload requirements](./images/uploadRequirements.png)
 
 4. Optional Settings Toggles:
 - Requires Discussion: Tick this if students must discuss their work in-person during class. This forces sign-off via QR code in class and prevents TAs from marking it remotely from a desktop.
@@ -30,10 +29,10 @@ Select target Grade Level (Pass, Credit, Distinction, High Distinction).
 
 5. Save your task
 
-<img width="543" alt="Optional settings and save" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/OptionalSettingsandSave.png" />
+![Optional settings and save](./images/OptionalSettingsandSave.png)
 
 6. Set Due Dates by Grade:
 - Click Manage Due Dates.
 - Define Target Start Date, Target Submission Date, and Latest Date (date by which the task must be submitted to receive feedback) for each target grade tier.
 
-<img width="875" alt="set due dates" src="src/content/docs/docs/ontrack/quickstart-guides/Quickstart-images/Manage due dates.png" />
+![set due dates](./images/Manage due dates.png)

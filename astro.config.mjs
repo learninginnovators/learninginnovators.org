@@ -40,31 +40,42 @@ export default defineConfig({
     },
     sidebar: [
       {
-        label: "OnTrack",
+        label: "OnTrack Documentation",
         items: [
           {
-            label: "Introduction",
-            link: "docs/ontrack/00-intro",
-          },
-          {
-            label: "Unit Administration",
-            collapsed: false,
+            label: "Quickstart Guides",
+            collapsed: true,
             autogenerate: {
-              directory:
-                "docs/ontrack/unit-admin",
+              directory: "docs/quickstart-guides",
               collapsed: true,
             },
           },
-          {
-            label: "Unit Delivery",
-            collapsed: false,
-            autogenerate: {
-              directory:
-                "docs/ontrack/unit-delivery",
-              collapsed: true,
-            },
-          },
-        ],
+        ]
+        // label: "OnTrack",
+        // items: [
+        //   {
+        //     label: "Introduction",
+        //     link: "docs/ontrack/00-intro",
+        //   },
+        //   {
+        //     label: "Unit Administration",
+        //     collapsed: false,
+        //     autogenerate: {
+        //       directory:
+        //         "docs/ontrack/unit-admin",
+        //       collapsed: true,
+        //     },
+        //   },
+        //   {
+        //     label: "Unit Delivery",
+        //     collapsed: false,
+        //     autogenerate: {
+        //       directory:
+        //         "docs/ontrack/unit-delivery",
+        //       collapsed: true,
+        //     },
+        //   },
+        // ],
       },
     ],
   })]
