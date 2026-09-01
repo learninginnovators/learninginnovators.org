@@ -1,53 +1,252 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const audiences = [
+  {
+    number: "",
+    label: "For students",
+    summary: "Clarity, agency, and room to improve.",
+    labelClasses: "bg-blue-50 text-blue-950 ring-1 ring-inset ring-blue-100",
+    markerClasses: "bg-blue-950",
+    benefits: [
+      {
+        title: "Know what success looks like",
+        description:
+          "Clear learning outcomes, transparent standards, and visible pathways help students understand what is expected and how to progress.",
+      },
+      {
+        title: "Learn through feedback",
+        description:
+          "Students receive meaningful feedback while they are still learning, with opportunities to respond, improve, and demonstrate mastery.",
+      },
+      {
+        title: "Take ownership of learning",
+        description:
+          "Visible progress, flexible goals, and clear next steps give students greater agency while keeping them connected to their teaching team.",
+      },
+      {
+        title: "Build evidence of capability",
+        description:
+          "Authentic tasks and reflective portfolios capture both what students produce and how their capabilities develop.",
+      },
+    ],
+  },
+  {
+    number: "",
+    label: "For educators",
+    summary: "More meaningful support, without the marking crunch.",
+    labelClasses: "bg-blue-50 text-blue-950 ring-1 ring-inset ring-blue-100",
+    markerClasses: "bg-blue-950",
+    benefits: [
+      {
+        title: "See learning as it happens",
+        description:
+          "At-a-glance progress information helps educators identify misconceptions, disengagement, and requests for help before students fall behind.",
+      },
+      {
+        title: "Make feedback manageable",
+        description:
+          "Replace periodic marking crunch with small, frequent, high-value formative touchpoints.",
+      },
+      {
+        title: "Focus support where it matters",
+        description:
+          "Clear task states and learning evidence help teaching teams respond to individual needs while maintaining a view of the whole cohort.",
+      },
+      {
+        title: "Maintain meaningful standards",
+        description:
+          "Explicit competency requirements and observable evidence provide confidence that students have demonstrated the intended learning.",
+      },
+    ],
+  },
+  {
+    number: "",
+    label: "For institutions",
+    summary: "A distinctive, scalable model for modern education.",
+    labelClasses: "bg-blue-50 text-blue-950 ring-1 ring-inset ring-blue-100",
+    markerClasses: "bg-blue-950",
+    benefits: [
+      {
+        title: "Offer a supportive student experience",
+        description:
+          "Human-centred, evidence-centred education provides a compelling alternative to impersonal, high-stakes assessment.",
+      },
+      {
+        title: "Deliver quality at scale",
+        description:
+          "The OnTrack Education Framework can support units of different disciplines, structures, and cohort sizes.",
+      },
+      {
+        title: "Support earlier intervention",
+        description:
+          "Visible engagement and progress make it easier to identify students who need support while there is still time to help.",
+      },
+      {
+        title: "Respond confidently to generative AI",
+        description:
+          "Authentic activity and visible learning processes create stronger evidence of student capability than isolated outputs alone.",
+      },
+    ],
+  },
+];
 ---
 
 <BaseLayout>
-  <section>
-    <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pb-24">
-      <div class="max-w-3xl mx-auto">
-        <p>video coming soon...</p>
-      </div>
-      <div class="max-w-3xl mx-auto">
-        <p>
-          The OnTrack Education Framework is a research-informed approach to evidence-centred education. It replaces disconnected, high-stakes assessment with clear learning goals, authentic tasks, iterative feedback, and trusted evidence of achievement.
+  <main class="overflow-hidden bg-white text-slate-900">
+    <!-- Hero -->
+    <section class="relative">
+      <div
+        class="mx-auto grid max-w-7xl items-center gap-12 px-8 py-16 md:px-12 md:py-20 lg:grid-cols-2 lg:gap-20 lg:px-32 lg:py-28"
+      >
+        <div>
+          <p
+            class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-blue-800"
+          >
+            The OnTrack Education Framework
+          </p>
 
-          Students can see where they are, understand what to do next, and improve through feedback. Educators can see learning as it happens and provide timely, targeted support. even across large cohorts.
-        </p>
+          <h1
+            class="max-w-2xl text-5xl font-semibold leading-[0.98] tracking-tight text-blue-950 font-display sm:text-6xl lg:text-7xl"
+          >
+            Make learning visible.
+          </h1>
+
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-600">
+            OnTrack is a research-informed approach to evidence-centred
+            education. It replaces disconnected, high-stakes assessment with
+            clear learning goals, authentic tasks, iterative feedback, and
+            trusted evidence of achievement.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#benefits"
+              class="inline-flex items-center rounded-lg bg-blue-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
+            >
+              Explore the benefits
+              <span class="ml-2" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          id="how-it-works"
+          class="relative aspect-video overflow-hidden rounded-3xl bg-gradient-to-br from-blue-950 via-blue-900 to-blue-700 shadow-2xl shadow-blue-950/20 lg:aspect-[4/3]"
+        >
+          <div
+            class="absolute -right-20 -top-20 h-72 w-72 rounded-full border border-white/20"
+            aria-hidden="true"
+          ></div>
+          <div
+            class="absolute -bottom-24 -left-20 h-56 w-56 rounded-full border border-white/15"
+            aria-hidden="true"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <div
+              class="flex h-16 w-16 items-center justify-center rounded-full border border-white/40 bg-white/15 text-2xl text-white backdrop-blur"
+              aria-hidden="true"
+            >
+              ▶
+            </div>
+            <p class="mt-5 text-sm font-semibold text-white">
+              Video coming soon
+            </p>
+            <p class="mt-1 text-sm text-blue-100">Video coming soon</p>
+          </div>
+        </div>
       </div>
-      <div class="max-w-3xl mx-auto">
-        <p>
-          OnTrack is better for educators:
-          <ul class="mt-3 space-y-3 list-disc list-outside pl-6">
-            <li>See learning as it happens: At-a-glance progress information helps educators identify misconceptions, disengagement, and requests for help before students fall behind.</li>
-            <li>Build trusted evidence of capability: Authentic tasks and reflective portfolios capture not only what students produce, but how their knowledge and capabilities develop.</li>
-            <li>Make feedback manageable: No more crunch. Instead, support your students with small, frequent, high value formative touch-points.</li>
-            <li>Focus support where it matters: Clear task states and learning evidence help teaching teams respond to individual needs while maintaining a view of the whole cohort.</li>
-            <li>Maintain meaningful standards: Explicit competency requirements and observable evidence give educators greater confidence that students have demonstrated the intended learning.</li>
-          </ul>
-        </p>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="border-y border-slate-200 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-8 py-16 md:px-12 md:py-20 lg:px-32 lg:py-24">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-800">
+            Supporting every student, at every scale, in every subject.
+          </p>
+          <h2 class="mt-4 text-4xl font-semibold tracking-tight text-blue-950 font-display sm:text-5xl">
+            Better learning, for everyone.
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            Help your students build competency, while also building your confidence and trust in their abilities.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          {
+            audiences.map((audience) => (
+              <article class="relative flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+                <div class="flex items-start justify-between gap-4">
+                  <span
+                    class={`rounded-full px-3 py-1 text-xs font-semibold ${audience.labelClasses}`}
+                  >
+                    {audience.label}
+                  </span>
+                  <span
+                    class="text-sm font-semibold tabular-nums text-slate-300"
+                    aria-hidden="true"
+                  >
+                    {audience.number}
+                  </span>
+                </div>
+
+                <h3 class="mt-6 text-xl font-semibold leading-7 text-blue-950">
+                  {audience.summary}
+                </h3>
+
+                <ul class="mt-6 space-y-6 border-t border-slate-200 pt-6">
+                  {audience.benefits.map((benefit) => (
+                    <li class="flex gap-3">
+                      <span
+                        class={`mt-2 h-2 w-2 shrink-0 rounded-full ${audience.markerClasses}`}
+                        aria-hidden="true"
+                      ></span>
+                      <div>
+                        <h4 class="font-semibold leading-6 text-slate-900">
+                          {benefit.title}
+                        </h4>
+                        <p class="mt-1 text-sm leading-6 text-slate-600">
+                          {benefit.description}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))
+          }
+        </div>
       </div>
-      <div class="max-w-3xl mx-auto">
-        <p>
-          OnTrack is better for students:
-          <ul class="mt-3 space-y-3 list-disc list-outside pl-6">
-            <li>Know what success looks like: Clear learning outcomes, transparent standards, and visible pathways help students understand what is expected and how to progress.</li>
-            <li>Learn through feedback: Students receive meaningful feedback while they are still learning, with opportunities to respond, improve, and demonstrate mastery.</li>
-            <li>Take ownership of learning: Visible progress, flexible goals, and clear next steps give students greater agency while keeping them connected to their teaching team.</li>
-          </ul>
-        </p>
+    </section>
+
+    <!-- Closing statement -->
+    <section>
+      <div class="mx-auto max-w-7xl px-8 py-16 md:px-12 md:py-20 lg:px-32">
+        <div
+          class="grid items-center gap-8 rounded-3xl bg-blue-950 px-8 py-10 text-white md:px-12 lg:grid-cols-[1fr_auto]"
+        >
+          <div class="max-w-3xl">
+            <h2 class="text-3xl font-semibold tracking-tight font-display">
+              Create learning. Don't just measure it.
+            </h2>
+            <p class="mt-3 leading-7 text-blue-100">
+              Make every task, feedback conversation, and improvement part of a
+              visible learning journey.
+            </p>
+          </div>
+
+          <!-- Replace this href with your intended next step. -->
+          <a
+            href="#how-it-works"
+            class="inline-flex w-fit items-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-blue-950 transition hover:bg-blue-50"
+          >
+            See how it works
+            <span class="ml-2" aria-hidden="true">↑</span>
+          </a>
+        </div>
       </div>
-      <div class="max-w-3xl mx-auto">
-        <p>
-          OnTrack is better for institutions:
-          <ul class="mt-3 space-y-3 list-disc list-outside pl-6">
-            <li>Offer a distinctively supportive student experience: Human-centred, evidence-centred education provides a compelling alternative to impersonal, high-stakes assessment.</li>
-            <li>Deliver consistent quality at scale: The OnTrack educational framework works with any unit, of any size. You just have to be willing to think a little differently.</li>
-            <li>Create learning, don't just measure it: OnTrack makes every task, feedback conversation, and improvement part of a visible learning journey. The result is education that supports student growth, strengthens confidence in graduate capability, and remains meaningful in an AI-pervasive world.</li>
-            <li>Support earlier intervention: Visible engagement and progress make it easier to identify students who need support and act while there is still time to help.</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </BaseLayout>
