@@ -24,7 +24,7 @@ If you have connected a junior staff member to a mentor in the Staff Settings (s
 
 3. You can leave Mod Notes for the TA, which sends direct coaching messages to the TA regarding a specific submission. This triggers an email to the TA and displays an un-dismissible notification icon in OnTrack until acknowledged.
 
-image here
+![task details](./images/ModNotes.png)
 
 4. You can also choose to see more from this TA if they need more guidance, or less if you are happy with their work.
 
