@@ -35,8 +35,6 @@ image here
 If a student disagrees with TA feedback, they can click Request Feedback Review (represented by a gavel icon).
 The submission routes directly to the assigned mentor/convener.
 
-![task details](./images/TaskFeedbackModeration.png)
-
 3-Point Escalation System:
 Students receive 3 dispute points per semester.
 If the convener agrees with the student, the feedback is revised and no points are deducted.
