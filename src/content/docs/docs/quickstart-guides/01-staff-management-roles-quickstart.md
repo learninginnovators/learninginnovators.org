@@ -5,12 +5,12 @@ description: Adding your staff, assigning them to a mentor
 
 Staff members must log into OnTrack at least once to automatically create their profile in the system before they can be assigned to a unit.
 
-User Roles Overview:
-Tutor (Default): Assigned to all staff upon first login. Allows staff to view all students and their submissions, provide feedback, update task statuses, view and grade portfolios, and be assigned to classes/students.
-Convener: All tutor permissions, plus full access to unit settings. Staff profiles must be upgraded by an Admin before they can be given this role in a unit.
-Observer Toggle: Makes any role read-only (allows viewing settings and submissions without ability to edit).
-Overflow Toggle: Enables staff to claim and give feedback on submissions waiting in the central overflow queue.
-Mentor Dropdown: Connects a senior staff member to a tutor for feedback moderation.
+### User Roles Overview
+- Tutor (Default): Assigned to all staff upon first login. Allows staff to view all students and their submissions, provide feedback, update task statuses, view and grade portfolios, and be assigned to classes/students.
+- Convener: All tutor permissions, plus full access to unit settings. Staff profiles must be upgraded by an Admin before they can be given this role in a unit.
+- Observer Toggle: Makes any role read-only (allows viewing settings and submissions without ability to edit).
+- Overflow Toggle: Enables staff to claim and give feedback on submissions waiting in the central overflow queue.
+- Mentor Dropdown: Connects a senior staff member to a tutor for feedback moderation.
 
 ### Step-by-step instructions
 
