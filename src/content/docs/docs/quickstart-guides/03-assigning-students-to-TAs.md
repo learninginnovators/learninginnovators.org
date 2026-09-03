@@ -27,4 +27,4 @@ To assign students to specific TAs for feedback, you need to set up feedback str
 ![task details](./images/Spreadsheet.png)
 7. Save the CSV.
 8. In the Admin > Students page in OnTrack, click “Batch Enrol”. Select the CSV and click “Start Upload” to process allocations.
-9. ![task details](./images/BatchEnrol.png)
+ ![task details](./images/BatchEnrol.png)
