@@ -35,4 +35,4 @@ Select target Grade Level (Pass, Credit, Distinction, High Distinction).
 - Click Manage Due Dates.
 - Define Target Start Date, Target Submission Date, and Latest Date (date by which the task must be submitted to receive feedback) for each target grade tier.
 
-![set due dates](./images/Manage due dates.png)
+![set due dates](./images/ManageDueDates.png)
