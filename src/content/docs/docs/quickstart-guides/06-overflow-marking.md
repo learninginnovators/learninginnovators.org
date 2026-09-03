@@ -6,7 +6,7 @@ description: When staff members fall behind or go on leave, overdue tasks automa
 
 When staff members fall behind or go on leave, overdue tasks automatically transition to the shared Overflow Queue.
 
-### How Overflow Works:
+### How Overflow Works
 
 When a task submitted for feedback exceeds the configured Overflow Threshold (e.g., 5 days post-submission) the task appears in the shared Overflow Inbox accessible to all staff with Overflow Marking enabled.
 
