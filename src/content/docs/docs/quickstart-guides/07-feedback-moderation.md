@@ -8,11 +8,9 @@ description: The moderation panel helps Conveners monitor feedback consistency a
 The moderation panel helps Conveners monitor feedback consistency and manage student appeals.
 
 
-Mentoring & Moderation Workflow::
+### Mentoring & Moderation Workflow
 
 If you have connected a junior staff member to a mentor in the Staff Settings (see Staff Management and Roles Quickstart guide) random sample submission feedback provided by that TA automatically appears in the mentor’s Moderation Panel.
-
-How to moderate feedback
 
 ### Step-by-step instructions
 
@@ -32,7 +30,7 @@ image here
 
 ![task details](./images/ShowMore.png) ![task details](./images/ShowLess.png)
 
-Student Feedback Escalations:
+### Student Feedback Escalations
 
 If a student disagrees with TA feedback, they can click Request Feedback Review (represented by a gavel icon).
 The submission routes directly to the assigned mentor/convener.
