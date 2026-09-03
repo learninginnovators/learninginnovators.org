@@ -10,12 +10,12 @@ To assign students to specific TAs for feedback, you need to set up feedback str
 1. Ensure all students and staff are imported into OnTrack.
 2. Go to Admin Panel > Tutorials.
 
-Option 1: One TA per class providing feedback in OnTrack:
+### Option 1: One TA per class providing feedback in OnTrack
 1. Importing your students will automatically create classes under “Applied 1”. Use the “Tutor” dropdown for each class to select the appropriate staff member.
 
 ![task details](./images/AssignTAs.png)
 
-Option 2: Multiple TAs per class providing feedback in OnTrack:
+### Option 2: Multiple TAs per class providing feedback in OnTrack
 
 1. Scroll to the bottom of the page and click New Tutorial Stream > Feedback. You can leave the default stream name and abbreviation of “Feedback 1”, or choose your own.
 2. Create as many feedback streams as you need. Typically this will be one stream per TA per class (e.g., 3 feedback streams for a class with 3 TAs). Each stream needs an abbreviation (e.g., “TAName-Class”), details of the associated class, and an assigned staff member. 
