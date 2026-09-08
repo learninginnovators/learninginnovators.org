@@ -1,0 +1,217 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const audiences = [
+  {
+    number: "",
+    label: "For students",
+    summary: "Clarity, agency, and freedom to learn from mistakes.",
+    labelClasses: "bg-blue-50 text-blue-950 ring-1 ring-inset ring-blue-100",
+    markerClasses: "bg-blue-950",
+    benefits: [
+      {
+        title: "Know what success looks like",
+        description:
+          "Clear learning outcomes and transparent standards help students understand what is expected and how to progress.",
+      },
+      {
+        title: "Learn through feedback",
+        description:
+          "Students receive meaningful feedback with opportunities to respond, improve, and demonstrate mastery.",
+      },
+      {
+        title: "Take ownership of learning",
+        description:
+          "Visible progress, flexible goals, and clear next steps give students greater agency while keeping them connected to support.",
+      },
+      {
+        title: "Build evidence of capability",
+        description:
+          "Authentic tasks and reflective portfolios capture both what students produce and how their capabilities have developed.",
+      },
+    ],
+  },
+  {
+    number: "",
+    label: "For educators",
+    summary: "Meaningful support, without the marking crunch.",
+    labelClasses: "bg-blue-50 text-blue-950 ring-1 ring-inset ring-blue-100",
+    markerClasses: "bg-blue-950",
+    benefits: [
+      {
+        title: "See learning as it happens",
+        description:
+          "Continuous engagement helps educators identify misconceptions, disengagement, and requests for help before students fall behind.",
+      },
+      {
+        title: "Make feedback manageable",
+        description:
+          "Replace periodic marking crunch with small, frequent, high-value formative touchpoints.",
+      },
+      {
+        title: "Focus support where it matters",
+        description:
+          "Clear standards help teaching teams respond to individual needs while maintaining a view of the whole cohort.",
+      },
+      {
+        title: "Maintain meaningful standards",
+        description:
+          "Explicit competency requirements and observable evidence provide confidence that students have demonstrated the intended learning.",
+      },
+    ],
+  },
+  {
+    number: "",
+    label: "For institutions",
+    summary: "A distinctive, scalable model for modern education.",
+    labelClasses: "bg-blue-50 text-blue-950 ring-1 ring-inset ring-blue-100",
+    markerClasses: "bg-blue-950",
+    benefits: [
+      {
+        title: "Offer a supportive student experience",
+        description:
+          "Human-centred education provides a compelling alternative to impersonal, high-stakes assessment.",
+      },
+      {
+        title: "Deliver quality at scale",
+        description:
+          "The OnTrack Education Framework can support units of any discipline, at any scale.",
+      },
+      {
+        title: "Support earlier intervention",
+        description:
+          "Visible engagement and progress make it easier to identify students who need support while there is still time to help.",
+      },
+      {
+        title: "Respond confidently to generative AI",
+        description:
+          "Authentic activity and visible learning processes create stronger evidence of student capability than isolated outputs alone.",
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout>
+  <main class="overflow-hidden bg-white text-slate-900">
+    <!-- Hero -->
+    <section class="relative">
+      <div
+        class="mx-auto grid max-w-7xl items-center gap-12 px-8 py-16 md:px-12 md:py-20 lg:grid-cols-2 lg:gap-20 lg:px-32 lg:py-28"
+      >
+        <div>
+          <p
+            class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-blue-800"
+          >
+            The OnTrack Education Framework
+          </p>
+
+          <h1
+            class="max-w-2xl text-5xl font-semibold leading-[0.98] tracking-tight text-blue-950 font-display sm:text-6xl lg:text-7xl"
+          >
+            Make learning visible.
+          </h1>
+
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-600">
+            OnTrack is a research-informed approach to modern education. It replaces disconnected, high-stakes assessment with clear learning goals, authentic tasks, iterative feedback, and trusted evidence of achievement.
+          </p>
+        </div>
+
+        <div
+          class="relative aspect-video overflow-hidden rounded-3xl bg-gradient-to-br from-blue-950 via-blue-900 to-blue-700 shadow-2xl shadow-blue-950/20 lg:aspect-[4/3]"
+        >
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <div
+              class="flex h-16 w-16 items-center justify-center rounded-full border border-white/40 bg-white/15 text-2xl text-white backdrop-blur"
+              aria-hidden="true"
+            >
+              ▶
+            </div>
+            <p class="mt-1 text-sm text-blue-100">Video coming soon</p>
+          </div>
+        </div>
+
+        <!-- <nav
+          class="mt-8 flex flex-col gap-3 sm:flex-row"
+          aria-label="Explore the OnTrack Education Framework"
+        >
+          <a
+            href="/how-different"
+            class="inline-flex h-12 w-full items-center justify-center rounded-full bg-green-500 px-6 text-sm font-semibold text-white transition hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 sm:w-auto"
+          >
+            Discover the OnTrack difference
+            <span class="ml-2" aria-hidden="true">→</span>
+          </a>
+          <a
+            href="/five-pillars"
+            class="inline-flex h-12 w-full items-center justify-center rounded-full bg-green-50 px-6 text-sm font-semibold text-green-700 transition hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 sm:w-auto"
+          >
+            Explore the five pillars
+            <span class="ml-2" aria-hidden="true">→</span>
+            </a>
+        </nav> -->
+      </div>
+    </section>
+
+    <section id="benefits" class="border-y border-slate-200 bg-slate-50/70">
+      <div class="mx-auto max-w-7xl px-8 py-16 md:px-12 md:py-20 lg:px-32 lg:py-24">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-800">
+            Supporting every student, at every scale, in every subject.
+          </p>
+          <h2 class="mt-4 text-4xl font-semibold tracking-tight text-blue-950 font-display sm:text-5xl">
+            Better learning, for everyone.
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            Create learning, don't just measure it.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          {
+            audiences.map((audience) => (
+              <article class="relative flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+                <div class="flex items-start justify-between gap-4">
+                  <span
+                    class={`rounded-full px-3 py-1 text-xs font-semibold ${audience.labelClasses}`}
+                  >
+                    {audience.label}
+                  </span>
+                  <span
+                    class="text-sm font-semibold tabular-nums text-slate-300"
+                    aria-hidden="true"
+                  >
+                    {audience.number}
+                  </span>
+                </div>
+
+                <h3 class="mt-6 text-xl font-semibold leading-7 text-blue-950">
+                  {audience.summary}
+                </h3>
+
+                <ul class="mt-6 space-y-6 border-t border-slate-200 pt-6">
+                  {audience.benefits.map((benefit) => (
+                    <li class="flex gap-3">
+                      <span
+                        class={`mt-2 h-2 w-2 shrink-0 rounded-full ${audience.markerClasses}`}
+                        aria-hidden="true"
+                      ></span>
+                      <div>
+                        <h4 class="font-semibold leading-6 text-slate-900">
+                          {benefit.title}
+                        </h4>
+                        <p class="mt-1 text-sm leading-6 text-slate-600">
+                          {benefit.description}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
