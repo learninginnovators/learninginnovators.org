@@ -1,91 +1,278 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const studentQuotes = [
+  "“I really like that you can work according to your grade preference, unlike other units where you submit a heavy weight grade assessment and waiting ages to get results to see how far you have come along”",
+  "“[I liked that the unit had a] straightforward structure and giving chances for improvement and better understanding of the tasks or the concepts via the feedback cycles”",
+  `"OnTrack is a great website, and the 'self-led' grading system where results are not determined by confounding factors, but the exact amount of effort and time that a student wishes to dedicate"`,
+];
+
+const staffQuotes = [
+  "“The platform and the pedagogy behind inform a very close student-educator relationship, constant communication and exchange on the learning journey”",
+  "“Students gain responsibility and autonomy in own work, everything is very transparent”",
+  "“I don’t see how we could run the same level of student feedback with any other system”",
+];
+
+const studentBenefits = [
+  {
+    title: "Choose a pathway",
+    description:
+      "Students can select a target grade and see the tasks needed to achieve it.",
+  },
+  {
+    title: "Learn from feedback",
+    description:
+      "Work can be revised and resubmitted until it demonstrates the required standard.",
+  },
+  {
+    title: "See progress clearly",
+    description:
+      "Personal dashboards, adjustable target dates, and burndown charts make progress visible.",
+  },
+];
+
+const staffBenefits = [
+  {
+    title: "Intervene earlier",
+    description:
+      "Progress visualisations help staff identify students who may need additional support.",
+  },
+  {
+    title: "Focus feedback",
+    description:
+      "Tutor inboxes and granular task statuses show staff exactly what needs attention.",
+  },
+  {
+    title: "Coordinate delivery",
+    description:
+      "Unit leads can oversee content, schedules, moderation, and teaching activity in one place.",
+  },
+];
+
+const featureGroups = [
+  {
+    title: "Personalised learning",
+    description: "Give each student a clear pathway through the unit.",
+    features: [
+      "Presentation of tasks based on student’s target grade",
+      "Ability for student to self-select target grade",
+    ],
+  },
+  {
+    title: "Feedback",
+    description: "Support sustained conversations about learning and improvement.",
+    features: [
+      "Granular task statuses supporting formative feedback",
+      "At-a-glance student dashboard",
+      "Single-click for students to view tutor feedback",
+      "Comments from staff",
+      "Comments from students",
+      "Comment chains",
+      "Full markdown support",
+      "Text and audio comments, with optional attachments",
+      "Tutor inbox showing at-a-glance what needs feedback",
+    ],
+  },
+  {
+    title: "Submissions",
+    description: "Keep evidence of learning organised and accessible.",
+    features: [
+      "Submission of student work",
+      "Submission history",
+      "Automatic similarity detection using JPlag and Turnitin",
+      "Automated portfolio compilation",
+    ],
+  },
+  {
+    title: "Unit management",
+    description: "Manage delivery consistently across a complete teaching team.",
+    features: [
+      "Automated marking",
+      "Built-in feedback moderation system",
+      "Visualisation of individual student progress",
+      "Automatic rollover of content between semesters",
+      "Single sign-on integration",
+      "LMS integration",
+    ],
+  },
+];
 ---
+
 <BaseLayout>
-    <section>
-        <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pb-24">
-            <div class="text-center">
-                <h1
-                    class="text-5xl font-semibold font-display text-blue-950 sm:text-6xl text-balance w-3/4 mx-auto">
-                    What is OnTrack? 
-                </h1>
-                
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-blue-50/70 to-white">
+      <div
+        aria-hidden="true"
+        class="absolute left-1/2 top-0 -z-0 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-100/60 blur-3xl"
+      ></div>
 
-            </div>
-            <div class="mt-10 space-y-6 text-left text-lg leading-relaxed text-slate-600">
-                <img src="/ContentImages/OnTrackQuote.png" />
-            <p>OnTrack is a unit management system designed specifically to support the OnTrack Education Framework in delivering truly student-centred learning experiences.
-</p> 
-
- 
-
-<h2>OnTrack for Students</h2>
-
-<p>In OnTrack, students complete tasks to learn content, develop skills, and evidence their learning. They submit tasks for feedback during the teaching period, and their assigned tutor views the work and leaves feedback. The student is able to submit the same task multiple times until it is judged acceptable.</p>
-
-<p>“I really like that you can work according to your grade preference, unlike other units where you submit a heavy weight grade assessment and waiting ages to get results to see how far you have come along” </p>
-
-<p>“[I liked that the unit had a] straightforward structure and giving chances for improvement and better understanding of the tasks or the concepts via the feedback cycles” </p>
-
-<p>“OnTrack is a great website, and the ‘self-led’ grading system where results are not determined by confounding factors, but the exact amount of effort and time that a student wishes to dedicate to the unit” </p>
-
-<p>The OnTrack system gives students agency over their learning, enabling them to choose their target grade, adjust their due dates and see a burndown chart of their progress through the tasks.
-</p>
-
-<h2>OnTrack for Staff</h2>
-
-<p>With OnTrack teaching staff can manage the content, sequence, and submission dates for learning tasks. 
-Tutors can manage interactions with the students both online and in class.
-Unit Leads can manage the work of all the teaching staff assigned to the unit.</p>
-
-<p>“The platform and the pedagogy behind inform a very close student-educator relationship, constant communication and exchange on the learning journey”</p>
-
-<p>“Students gain responsibility and autonomy in own work, everything is very transparent” </p>
-
-<p>“I don’t see how we could run the same level of student feedback with any other system” </p>
-
-
-
-<img src="/ContentImages/OnTrack-StudentPlanner.png" />
-
-<h2>OnTrack features</h2>
-
-<h3>Personalised learning functions</h3>
-<ul>
-    <li>Presentation of tasks based on student’s target grade ✅ </li>
-<li>Ability for student to self-select target grade ✅ </li></ul>
-
-<h3>Feedback functions</h3>
-<ul>
-    <li>Granular task statuses supporting formative feedback ✅ </li>
-<li>At-a-glance student dashboard ✅  </li>
- <li>Single-click for students to view tutor feedback ✅  </li>
- <li>Comments from staff ✅   </li>
- <li>Comments from students ✅   </li>
- <li>Comment chains ✅   </li>
- <li>Full markdown support ✅   </li>
- <li>Text and audio comments, with optional attachments ✅   </li>
- <li>Tutor inbox showing at-a-glance what needs feedback ✅  </li></ul>
-
-
-<h3>Submission functions</h3>
-<ul>
-    <li>Submission of student work ✅  </li>
-<li>Submission history ✅  </li>
-<li>Automatic similarity detection using JPlag and Turnitin ✅ </li>
-<li>Automated portfolio compilation ✅ </li></ul>
-
-<h3>Unit management functions</h3>
-<ul><li>Automated marking ✅ </li>
-<li>Built-in feedback moderation system ✅</li>
-<li>Visualisation of individual student progress ✅ </li>
-<li>Automatic rollover of content between semesters ✅</li>
-<li>Single sign-on integration ✅</li>
-<li>LMS integration ✅</li></ul>
-
-
-
+      <div class="relative z-10 mx-auto max-w-7xl px-6 pb-6 pt-14 sm:px-8 sm:pt-20 md:px-12 lg:px-16 lg:pb-10 lg:pt-24">
+        <div class="mx-auto max-w-4xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">
+            The learning platform behind the framework
+          </p>
+          <h1 class="mt-4 text-balance font-display text-5xl font-semibold tracking-tight text-blue-950 sm:text-6xl lg:text-7xl">
+            What is OnTrack?
+          </h1>
+          <p class="mx-auto mt-6 max-w-3xl text-balance text-lg leading-relaxed text-slate-600 sm:text-xl">
+            OnTrack is the learning platform built to support the OnTrack Education Framework. It makes student-centred, feedback-rich learning practical at scale—giving students agency over their learning while helping staff maintain clear and transparent standards.
+          </p>
         </div>
-    </div>
+
+        <div class="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
+            <p class="font-semibold text-blue-950">Learn through feedback</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-600">Revise, improve, and demonstrate mastery over time.</p>
+          </div>
+          <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
+            <p class="font-semibold text-blue-950">Make progress visible</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-600">Give students and staff a shared view of learning.</p>
+          </div>
+          <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
+            <p class="font-semibold text-blue-950">Personalise the pathway</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-600">Support student choice while maintaining standards.</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Students -->
+    <section class="pb-16 pt-6 sm:pb-20 sm:pt-8 lg:pb-24 lg:pt-6">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12 lg:px-16">
+        <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">For students</p>
+            <h2 class="mt-3 text-balance font-display text-4xl font-semibold tracking-tight text-blue-950 sm:text-5xl">
+              A clear pathway, with room to learn
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-slate-600">
+              Students work through a sequence of purposeful learning tasks aligned with clear learning outcomes and grade standards. They submit their work during the teaching period, receive feedback from their tutor, and respond by revising or extending their work. This creates an ongoing learning cycle in which feedback can improve the work it addresses.
+            </p>
+
+            <div class="mt-8 space-y-6">
+              {
+                studentBenefits.map((benefit) => (
+                  <div class="flex gap-4">
+                    <div class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+                      <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                        <path fill-rule="evenodd" d="M16.704 5.29a1 1 0 0 1 .006 1.414l-7.25 7.31a1 1 0 0 1-1.42 0l-3.75-3.78a1 1 0 1 1 1.42-1.408l3.04 3.064 6.54-6.594a1 1 0 0 1 1.414-.006Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-blue-950">{benefit.title}</h3>
+                      <p class="mt-1 leading-relaxed text-slate-600">{benefit.description}</p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+
+          <div class="relative">
+            <div aria-hidden="true" class="absolute -inset-4 -z-10 rounded-3xl bg-blue-100/60 sm:-inset-6"></div>
+            <img
+              src="/ContentImages/OnTrack-StudentPlanner.png"
+              alt="The OnTrack student planner showing tasks and progress"
+              class="h-auto w-full rounded-2xl border border-slate-200 bg-white shadow-xl shadow-blue-950/10"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="mt-14 grid gap-5 md:grid-cols-3">
+          {
+            studentQuotes.map((quote) => (
+              <blockquote class="flex h-full flex-col rounded-2xl border border-blue-100 bg-blue-50/60 p-6 text-base leading-relaxed text-blue-950">
+                <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor" class="mb-4 h-8 w-8 text-blue-300">
+                  <path d="M13.6 7.2C8.2 9 5.4 12.5 5.2 17.8c0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Zm12 0c-5.4 1.8-8.2 5.3-8.4 10.6 0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Z" />
+                </svg>
+                <p>{quote}</p>
+              </blockquote>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff -->
+    <section class="border-y border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12 lg:px-16">
+        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">For staff</p>
+            <h2 class="mt-3 text-balance font-display text-4xl font-semibold tracking-tight text-blue-950 sm:text-5xl">
+              Meaningful support, made manageable
+            </h2>
+          </div>
+
+          <div>
+            <p class="text-lg leading-relaxed text-slate-600">
+              OnTrack helps teaching teams coordinate learning tasks, feedback, and student support across an entire unit. Tutors can quickly identify work requiring attention, manage ongoing interactions with their students, and see individual progress at a glance. Unit leads gain oversight of the teaching team, student engagement, and feedback activity.
+            </p>
+
+            <div class="mt-8 grid gap-6 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              {
+                staffBenefits.map((benefit) => (
+                  <div>
+                    <h3 class="font-semibold text-blue-950">{benefit.title}</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">{benefit.description}</p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 grid gap-5 md:grid-cols-3">
+          {
+            staffQuotes.map((quote) => (
+              <blockquote class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 text-base leading-relaxed text-blue-950 shadow-sm">
+                <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor" class="mb-4 h-8 w-8 text-blue-300">
+                  <path d="M13.6 7.2C8.2 9 5.4 12.5 5.2 17.8c0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Zm12 0c-5.4 1.8-8.2 5.3-8.4 10.6 0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Z" />
+                </svg>
+                <p>{quote}</p>
+              </blockquote>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16 sm:py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12 lg:px-16">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Platform capabilities</p>
+          <h2 class="mt-3 text-balance font-display text-4xl font-semibold tracking-tight text-blue-950 sm:text-5xl">
+            Everything needed to support learning through feedback
+          </h2>
+          <p class="mt-5 text-lg leading-relaxed text-slate-600">
+            OnTrack brings personalised learning, formative feedback, submissions, and unit coordination together in one system.
+          </p>
+        </div>
+
+        <div class="mt-12 grid items-start gap-6 md:grid-cols-2">
+          {
+            featureGroups.map((group) => (
+              <article class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
+                <h3 class="font-display text-2xl font-semibold text-blue-950">{group.title}</h3>
+                <p class="mt-2 leading-relaxed text-slate-600">{group.description}</p>
+                <ul class="mt-6 space-y-3">
+                  {group.features.map((feature) => (
+                    <li class="flex gap-3 text-slate-700">
+                      <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="mt-0.5 h-5 w-5 shrink-0 text-blue-600">
+                        <path fill-rule="evenodd" d="M16.704 5.29a1 1 0 0 1 .006 1.414l-7.25 7.31a1 1 0 0 1-1.42 0l-3.75-3.78a1 1 0 1 1 1.42-1.408l3.04 3.064 6.54-6.594a1 1 0 0 1 1.414-.006Z" clip-rule="evenodd" />
+                      </svg>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
 </BaseLayout>
