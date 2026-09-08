@@ -4,13 +4,13 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 const studentQuotes = [
   "“I really like that you can work according to your grade preference, unlike other units where you submit a heavy weight grade assessment and waiting ages to get results to see how far you have come along”",
   "“[I liked that the unit had a] straightforward structure and giving chances for improvement and better understanding of the tasks or the concepts via the feedback cycles”",
-  `"OnTrack is a great website, and the 'self-led' grading system where results are not determined by confounding factors, but the exact amount of effort and time that a student wishes to dedicate"`,
+  `"OnTrack is a great website, and has a 'self-led' grading system where results are not determined by confounding factors, but the exact amount of effort and time that a student wishes to dedicate"`,
 ];
 
 const staffQuotes = [
   "“The platform and the pedagogy behind inform a very close student-educator relationship, constant communication and exchange on the learning journey”",
   "“Students gain responsibility and autonomy in own work, everything is very transparent”",
-  "“I don’t see how we could run the same level of student feedback with any other system”",
+  "“I don't see how we could run the same level of student feedback with any other system”",
 ];
 
 const studentBenefits = [
@@ -27,20 +27,20 @@ const studentBenefits = [
   {
     title: "See progress clearly",
     description:
-      "Personal dashboards, adjustable target dates, and burndown charts make progress visible.",
+      "Personal dashboards, task planners, and progress visualisations make learning visible.",
   },
 ];
 
 const staffBenefits = [
   {
-    title: "Intervene earlier",
+    title: "Support students earlier",
     description:
-      "Progress visualisations help staff identify students who may need additional support.",
+      "Progress visualisations and direct communication help staff identify and engage students who may need additional support.",
   },
   {
-    title: "Focus feedback",
+    title: "Focus on feedback",
     description:
-      "Tutor inboxes and granular task statuses show staff exactly what needs attention.",
+      "Granular task statuses show staff exactly what needs attention.",
   },
   {
     title: "Coordinate delivery",
@@ -51,50 +51,58 @@ const staffBenefits = [
 
 const featureGroups = [
   {
-    title: "Personalised learning",
-    description: "Give each student a clear pathway through the unit.",
+    title: "Guide each student’s pathway",
+    description:
+      "Give students a clear view of where they are going, what they need to complete, and what to do next.",
     features: [
-      "Presentation of tasks based on student’s target grade",
-      "Ability for student to self-select target grade",
+      "Student-selected target grades",
+      "Tasks presented according to each student’s target",
+      "Personalised task planning and progress visualisations",
+      "Automated progress emails suggesting appropriate next steps",
     ],
   },
   {
-    title: "Feedback",
-    description: "Support sustained conversations about learning and improvement.",
+    title: "Sustain feedback conversations",
+    description:
+      "Keep students and staff in an ongoing conversation about learning, revision, and improvement.",
     features: [
-      "Granular task statuses supporting formative feedback",
-      "At-a-glance student dashboard",
-      "Single-click for students to view tutor feedback",
-      "Comments from staff",
-      "Comments from students",
-      "Comment chains",
-      "Full markdown support",
-      "Text and audio comments, with optional attachments",
-      "Tutor inbox showing at-a-glance what needs feedback",
+      "Task statuses that make each stage of the feedback cycle visible",
+      "Ongoing comment threads between staff and students",
+      "Direct access to feedback from the student dashboard",
+      "Richly formatted feedback using Markdown",
+      "Text and audio feedback with optional attachments",
+      "Notifications when new feedback or comments are available",
     ],
   },
   {
-    title: "Submissions",
-    description: "Keep evidence of learning organised and accessible.",
+    title: "Build trusted evidence of learning",
+    description:
+      "Capture how students’ work develops and bring trusted evidence of achievement together.",
     features: [
       "Submission of student work",
-      "Submission history",
-      "Automatic similarity detection using JPlag and Turnitin",
+      "Complete submission and revision history",
+      "Automated submission checks through Overseer",
+      "Integrated similarity checking using JPlag and Turnitin",
       "Automated portfolio compilation",
     ],
   },
   {
-    title: "Unit management",
-    description: "Manage delivery consistently across a complete teaching team.",
+    title: "Coordinate support at scale",
+    description:
+      "Help staff respond consistently while giving unit leads visibility across the cohort.",
     features: [
-      "Automated marking",
-      "Built-in feedback moderation system",
-      "Visualisation of individual student progress",
-      "Automatic rollover of content between semesters",
-      "Single sign-on integration",
-      "LMS integration",
+      "Staff inbox showing work that requires attention",
+      "Individual and cohort progress dashboards",
+      "Unit-wide visibility of student engagement",
+      "Built-in feedback moderation",
     ],
   },
+];
+
+const integrationFeatures = [
+  "LMS integration",
+  "Single sign-on using institutional accounts",
+  "Automatic rollover between teaching periods",
 ];
 ---
 
@@ -104,7 +112,7 @@ const featureGroups = [
     <section class="relative overflow-hidden bg-gradient-to-b from-blue-50/70 to-white">
       <div
         aria-hidden="true"
-        class="absolute left-1/2 top-0 -z-0 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-100/60 blur-3xl"
+        class="absolute left-1/2 top-0 z-0 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-100/60 blur-3xl"
       ></div>
 
       <div class="relative z-10 mx-auto max-w-7xl px-6 pb-6 pt-14 sm:px-8 sm:pt-20 md:px-12 lg:px-16 lg:pb-10 lg:pt-24">
@@ -116,22 +124,22 @@ const featureGroups = [
             What is OnTrack?
           </h1>
           <p class="mx-auto mt-6 max-w-3xl text-balance text-lg leading-relaxed text-slate-600 sm:text-xl">
-            OnTrack is the learning platform built to support the OnTrack Education Framework. It makes student-centred, feedback-rich learning practical at scale—giving students agency over their learning while helping staff maintain clear and transparent standards.
+            OnTrack is the learning platform built for the OnTrack Education Framework. It makes student-centred, feedback-rich learning practical at scale—giving students agency while helping staff maintain clear and transparent standards.
           </p>
         </div>
 
         <div class="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-3">
           <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
-            <p class="font-semibold text-blue-950">Learn through feedback</p>
+            <p class="font-semibold text-blue-950">Clear pathways</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-600">Understand what success looks like and what to do next.</p>
+          </div>
+          <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
+            <p class="font-semibold text-blue-950">Actionable feedback</p>
             <p class="mt-1 text-sm leading-relaxed text-slate-600">Revise, improve, and demonstrate mastery over time.</p>
           </div>
           <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
-            <p class="font-semibold text-blue-950">Make progress visible</p>
-            <p class="mt-1 text-sm leading-relaxed text-slate-600">Give students and staff a shared view of learning.</p>
-          </div>
-          <div class="rounded-2xl border border-blue-100 bg-blue-50/70 p-5">
-            <p class="font-semibold text-blue-950">Personalise the pathway</p>
-            <p class="mt-1 text-sm leading-relaxed text-slate-600">Support student choice while maintaining standards.</p>
+            <p class="font-semibold text-blue-950">Trusted evidence</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-600">Make learning visible while maintaining clear standards.</p>
           </div>
         </div>
       </div>
@@ -140,14 +148,14 @@ const featureGroups = [
     <!-- Students -->
     <section class="pb-16 pt-6 sm:pb-20 sm:pt-8 lg:pb-24 lg:pt-6">
       <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12 lg:px-16">
-        <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12 xl:grid-cols-[0.75fr_1.25fr]">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">For students</p>
             <h2 class="mt-3 text-balance font-display text-4xl font-semibold tracking-tight text-blue-950 sm:text-5xl">
               A clear pathway, with room to learn
             </h2>
             <p class="mt-6 text-lg leading-relaxed text-slate-600">
-              Students work through a sequence of purposeful learning tasks aligned with clear learning outcomes and grade standards. They submit their work during the teaching period, receive feedback from their tutor, and respond by revising or extending their work. This creates an ongoing learning cycle in which feedback can improve the work it addresses.
+              Students work through purposeful learning tasks aligned with clear outcomes and grade standards. They submit work as they learn, receive feedback from staff, and respond by revising or extending their work. This creates an ongoing learning cycle, with feedback arriving while students can still act on it.
             </p>
 
             <div class="mt-8 space-y-6">
@@ -172,18 +180,25 @@ const featureGroups = [
           <div class="relative">
             <div aria-hidden="true" class="absolute -inset-4 -z-10 rounded-3xl bg-blue-100/60 sm:-inset-6"></div>
             <img
-              src="/ContentImages/OnTrack-StudentPlanner.png"
-              alt="The OnTrack student planner showing tasks and progress"
+              src="/ContentImages/StudentDashboard.png"
+              alt="The OnTrack student dashboard showing tasks and progress"
               class="h-auto w-full rounded-2xl border border-slate-200 bg-white shadow-xl shadow-blue-950/10"
               loading="lazy"
             />
           </div>
         </div>
 
-        <div class="mt-14 grid gap-5 md:grid-cols-3">
+        <div class="mt-14 grid gap-5 lg:grid-cols-2 lg:grid-rows-2">
           {
-            studentQuotes.map((quote) => (
-              <blockquote class="flex h-full flex-col rounded-2xl border border-blue-100 bg-blue-50/60 p-6 text-base leading-relaxed text-blue-950">
+            studentQuotes.map((quote, index) => (
+              <blockquote
+                class:list={[
+                  "flex h-full flex-col justify-center rounded-2xl border border-blue-100 bg-blue-50/60 leading-relaxed text-blue-950",
+                  index === 0
+                    ? "p-8 text-lg sm:p-10 lg:row-span-2"
+                    : "p-6 text-base sm:p-7",
+                ]}
+              >
                 <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor" class="mb-4 h-8 w-8 text-blue-300">
                   <path d="M13.6 7.2C8.2 9 5.4 12.5 5.2 17.8c0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Zm12 0c-5.4 1.8-8.2 5.3-8.4 10.6 0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Z" />
                 </svg>
@@ -198,7 +213,7 @@ const featureGroups = [
     <!-- Staff -->
     <section class="border-y border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24">
       <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12 lg:px-16">
-        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+        <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">For staff</p>
             <h2 class="mt-3 text-balance font-display text-4xl font-semibold tracking-tight text-blue-950 sm:text-5xl">
@@ -206,58 +221,77 @@ const featureGroups = [
             </h2>
           </div>
 
-          <div>
+          <div class="lg:pt-11">
             <p class="text-lg leading-relaxed text-slate-600">
-              OnTrack helps teaching teams coordinate learning tasks, feedback, and student support across an entire unit. Tutors can quickly identify work requiring attention, manage ongoing interactions with their students, and see individual progress at a glance. Unit leads gain oversight of the teaching team, student engagement, and feedback activity.
+              OnTrack helps teaching teams provide timely, consistent support across an entire unit. Staff can identify work requiring attention, maintain ongoing feedback conversations, and see individual and cohort progress at a glance.
             </p>
-
-            <div class="mt-8 grid gap-6 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-              {
-                staffBenefits.map((benefit) => (
-                  <div>
-                    <h3 class="font-semibold text-blue-950">{benefit.title}</h3>
-                    <p class="mt-2 text-sm leading-relaxed text-slate-600">{benefit.description}</p>
-                  </div>
-                ))
-              }
-            </div>
           </div>
         </div>
 
-        <div class="mt-14 grid gap-5 md:grid-cols-3">
-          {
-            staffQuotes.map((quote) => (
-              <blockquote class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 text-base leading-relaxed text-blue-950 shadow-sm">
-                <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor" class="mb-4 h-8 w-8 text-blue-300">
-                  <path d="M13.6 7.2C8.2 9 5.4 12.5 5.2 17.8c0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Zm12 0c-5.4 1.8-8.2 5.3-8.4 10.6 0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Z" />
-                </svg>
-                <p>{quote}</p>
-              </blockquote>
-            ))
-          }
+        <div class="mt-12 grid items-start gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <div class="space-y-8">
+            {
+              staffBenefits.map((benefit) => (
+                <div class="flex gap-4">
+                  <div class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+                    <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                      <path fill-rule="evenodd" d="M16.704 5.29a1 1 0 0 1 .006 1.414l-7.25 7.31a1 1 0 0 1-1.42 0l-3.75-3.78a1 1 0 1 1 1.42-1.408l3.04 3.064 6.54-6.594a1 1 0 0 1 1.414-.006Z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-blue-950">{benefit.title}</h3>
+                    <p class="mt-1 leading-relaxed text-slate-600">{benefit.description}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+
+          <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm shadow-blue-950/5">
+            {
+              staffQuotes.map((quote, index) => (
+                <blockquote
+                  class:list={[
+                    "flex gap-4 p-6 leading-relaxed text-blue-950 sm:p-8",
+                    index > 0 && "border-t border-slate-200",
+                  ]}
+                >
+                  <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor" class="h-7 w-7 shrink-0 text-blue-300">
+                    <path d="M13.6 7.2C8.2 9 5.4 12.5 5.2 17.8c0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Zm12 0c-5.4 1.8-8.2 5.3-8.4 10.6 0 3.8 2.1 6.6 5.3 6.6 2.7 0 4.7-2 4.7-4.7 0-2.6-1.8-4.4-4.3-4.4-.5 0-1 .1-1.4.2.7-2.4 2.5-4.2 5.5-5.6l-1.4-2.7Z" />
+                  </svg>
+                  <p>{quote}</p>
+                </blockquote>
+              ))
+            }
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="py-16 sm:py-20 lg:py-24">
+    <section id="features" class="bg-gradient-to-b from-white to-blue-50/50 py-16 sm:py-20 lg:py-24">
       <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12 lg:px-16">
-        <div class="mx-auto max-w-3xl text-center">
+        <div class="max-w-4xl">
           <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Platform capabilities</p>
           <h2 class="mt-3 text-balance font-display text-4xl font-semibold tracking-tight text-blue-950 sm:text-5xl">
-            Everything needed to support learning through feedback
+            Designed around the learning journey
           </h2>
-          <p class="mt-5 text-lg leading-relaxed text-slate-600">
-            OnTrack brings personalised learning, formative feedback, submissions, and unit coordination together in one system.
+          <p class="mt-5 max-w-3xl text-lg leading-relaxed text-slate-600">
+            OnTrack brings together the capabilities needed to guide each student, sustain meaningful feedback conversations, build trusted evidence of learning, and coordinate support across a teaching team.
           </p>
         </div>
 
-        <div class="mt-12 grid items-start gap-6 md:grid-cols-2">
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
           {
             featureGroups.map((group) => (
-              <article class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
-                <h3 class="font-display text-2xl font-semibold text-blue-950">{group.title}</h3>
-                <p class="mt-2 leading-relaxed text-slate-600">{group.description}</p>
+              <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm shadow-blue-950/5 sm:p-8">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-blue-700">
+                  {group.label}
+                </p>
+                <h3 class="mt-3 font-display text-2xl font-semibold text-blue-950 sm:text-3xl">
+                  {group.title}
+                </h3>
+                <p class="mt-3 leading-relaxed text-slate-600">{group.description}</p>
                 <ul class="mt-6 space-y-3">
                   {group.features.map((feature) => (
                     <li class="flex gap-3 text-slate-700">
@@ -272,6 +306,28 @@ const featureGroups = [
             ))
           }
         </div>
+
+        <article class="mt-6 rounded-2xl border border-slate-200 bg-white p-7 shadow-sm shadow-blue-950/5 sm:p-8">
+          <h3 class="mt-3 font-display text-2xl font-semibold text-blue-950 sm:text-3xl">
+            Connect with institutional systems
+          </h3>
+          <p class="mt-3 max-w-3xl leading-relaxed text-slate-600">
+            OnTrack fits in with established university systems.
+          </p>
+
+          <ul class="mt-6 grid gap-3 sm:grid-cols-3 sm:gap-6">
+            {
+              integrationFeatures.map((feature) => (
+                <li class="flex gap-3 text-slate-700">
+                  <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="mt-0.5 h-5 w-5 shrink-0 text-blue-600">
+                    <path fill-rule="evenodd" d="M16.704 5.29a1 1 0 0 1 .006 1.414l-7.25 7.31a1 1 0 0 1-1.42 0l-3.75-3.78a1 1 0 1 1 1.42-1.408l3.04 3.064 6.54-6.594a1 1 0 0 1 1.414-.006Z" clip-rule="evenodd" />
+                  </svg>
+                  <span>{feature}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </article>
       </div>
     </section>
   </main>
