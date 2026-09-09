@@ -77,6 +77,13 @@ export default defineConfig({
         //   },
         // ],
       },
-    ],
+      {
+        label: "Education Framework",
+            autogenerate: {
+              directory: "education-framework",
+              collapsed: true,
+            },
+      },
+    ]
   })]
 });
