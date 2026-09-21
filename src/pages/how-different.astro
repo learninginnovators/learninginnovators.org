@@ -1,46 +1,248 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { BRAND } from "astro:schema";
+
+const differences = [
+  {
+    label: "The purpose of assessment",
+    traditional: "Measure performance at a few points in time",
+    onTrack: "Create, guide, and validate learning throughout a student's journey",
+  },
+  {
+    label: "How achievement is judged",
+    traditional: "Accumulate enough marks across separate assessments",
+    onTrack: "Demonstrate the required capabilities through a connected body of evidence",
+  },
+  {
+    label: "What happens after feedback",
+    traditional: "The mark is usually final, and feedback explains what the student could have done",
+    onTrack: "Students act on feedback, revise their work, and strengthen their understanding",
+  },
+  {
+    label: "The role of teaching staff",
+    traditional: "Judge completed work after submission",
+    onTrack: "Coach learning as it develops, and validate achievement along the way",
+  },
+  {
+    label: "What the final grade means",
+    traditional: "Strong performance in one area can compensate for gaps in another",
+    onTrack: "All required capabilities must be demonstrated; important learning is not averaged away",
+  },
+];
+
+const gradeBands = [
+  {
+    grade: "Pass",
+    requirement: "Complete all Pass tasks",
+  },
+  {
+    grade: "Credit",
+    requirement: "Pass tasks + Credit tasks",
+  },
+  {
+    grade: "Distinction",
+    requirement: "Pass + Credit + Distinction tasks",
+  },
+  {
+    grade: "High Distinction",
+    requirement: "Complete every task",
+  },
+];
 ---
 
 <BaseLayout>
-  <section>
-    <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pb-24">
-      <div class="max-w-3xl mx-auto">
-       <h1
-          class="text-5xl font-semibold text-center font-display text-blue-950 sm:text-6xl text-balance"
-        >
-          How is the OnTrack Education Framework different?
-        </h1>
-<div class="mt-10 space-y-6 text-left text-lg leading-relaxed text-slate-600">
-          <p>In a unit running a traditional assessment model, generally there will be a method for delivering content punctuated at intervals (usually 3-4 throughout semester) by assessment tasks, each of which comprises a portion of the total marks available for the unit.</p> 
-            <img src="/public/MATTERImages/traditionalUnitStructureDiagram.png" />
-            <p>Students achieve a grade by successfully accumulating the required number of marks for that grade over the course of the assessment schedule. Students cannot resubmit to improve on an attempt once they have received a mark for their work, meaning that all assessment submissions are high stakes events. Typically, unit learning outcomes are covered across the assessment pieces, and it is difficult to prove that students have successfully demonstrated competence in each learning outcome, as they may have been very good at one and very bad at another but still accumulated enough marks to pass.
-</p><p>The defining feature of an OnTrack unit is that the different grade achievement levels are represented by different tasks, which are rolled up into a portfolio of work that is a 100% assessment. Each task is evaluated by staff as either satisfactory and therefore complete, or not yet satisfactory. If not yet satisfactory, it is returned to the student with feedback that they can act upon before resubmitting. 
-To achieve a Pass students must complete all Pass level tasks to the required standard. To achieve a Credit they must complete all the Pass level tasks AND all the Credit level tasks to the required standard. And so on. Once all tasks for a particular grade level have been marked as complete, the student is guaranteed at least that grade. The mark within that grade level is then determined by how well the student has engaged with the unit and with their own learning process.
+  <main class="not-prose bg-white text-slate-700">
+    <section class="relative isolate overflow-hidden bg-white text-slate-700">
+      <div
+        class="absolute inset-x-0 top-0 -z-10 h-96 bg-gradient-to-b from-blue-50 to-white"
+        aria-hidden="true"
+      ></div>
 
+      <div class="mx-auto max-w-screen-2xl px-6 py-16 sm:px-8 sm:py-20 lg:py-24">
+        <div class="mx-auto max-w-5xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">The OnTrack difference</p>
+          <h1 class="mt-5 font-display text-4xl font-semibold tracking-tight text-blue-950 text-balance sm:text-5xl lg:text-6xl">
+            From accumulating marks to building capability
+          </h1>
+          <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
+            Traditional assessment samples student performance at a few high-stakes moments. The OnTrack Education Framework makes learning visible throughout the unit, so students can improve and educators can build confidence in what they have achieved.
           </p>
-          <video controls autoplay src="/public/MATTERImages/TaskAssessmentGif.mp4" />
-          <h2>OnTrack Unit Structure</h2>
-          <p>An OnTrack unit is characterised by the series of tasks that comprise the assessment. Content delivery is flexible and can be designed in whatever way suits the unit. Some units are entirely flipped and self-paced, others are structured similarly to a traditional unit with weekly content delivery and small class activities</p>
-         <img src="/public/MATTERImages/MATTERUnitStructure.png" />
-         <p>This is how it is explained to students</p>
-         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GMDU4_D-uKY?si=hXxFwB1ndkWgTs2j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-        <p>&nbsp;</p>
-        <p>
-          <a href="designExamples">Examples of OnTrack unit designs...</a>
-      </p>
-      <p>&nbsp;</p>
-</div>
-         
-          <div>
-            
+        </div>
 
-            
-<div class="mt-10 space-y-6 text-left text-lg leading-relaxed text-slate-600">
-</div>
+        <div class="mx-auto mt-12 grid max-w-7xl gap-4 md:grid-cols-2">
+          <article class="h-full rounded-3xl border border-slate-200 border-t-4 border-t-slate-400 bg-white p-7 shadow-sm sm:p-8">
+            <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Traditional assessment</p>
+            <h2 class="mt-3 font-display text-2xl font-semibold text-blue-950 lg:whitespace-nowrap 2xl:text-3xl">Submit. Receive a mark. Move on.</h2>
+            <p class="mt-4 leading-7 text-slate-600">
+              Learning is interrupted by a small number of weighted assessments. Each mark contributes to an overall total.
+            </p>
+          </article>
 
+          <article class="h-full rounded-3xl border border-blue-200 border-t-4 border-t-blue-600 bg-blue-50 p-7 shadow-sm sm:p-8">
+            <p class="text-sm font-semibold uppercase tracking-wider text-blue-700">OnTrack</p>
+            <h2 class="mt-3 font-display text-2xl font-semibold text-blue-950 lg:whitespace-nowrap 2xl:text-3xl">Attempt. Receive guidance. Improve.</h2>
+            <p class="mt-4 leading-7 text-slate-700">
+              Assessment becomes part of learning. Students build a portfolio of trusted evidence through active tasks, feedback, discussion, and revision.
+            </p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="border-t border-slate-100 bg-white py-16 text-slate-700 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="font-display text-3xl font-semibold tracking-tight text-blue-950 text-balance sm:text-4xl">
+            Create learning, don't just measure it
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-slate-600">
+            OnTrack changes the relationship between learning, feedback, and judgement. The standard remains clear; what changes is how students are supported to reach it.
+          </p>
+        </div>
+
+        <div class="mx-auto mt-12 max-w-6xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+          <div class="hidden grid-cols-[1.15fr_1fr_1fr] bg-slate-50 text-sm font-semibold md:grid">
+            <div class="p-5 text-slate-500">What changes</div>
+            <div class="border-l border-slate-200 p-5 text-slate-700">Traditional assessment</div>
+            <div class="border-l border-blue-200 bg-blue-50 p-5 text-blue-950">OnTrack Education Framework</div>
+          </div>
+
+          {differences.map((item) => (
+            <article class="grid border-t border-slate-200 first:border-t-0 md:grid-cols-[1.15fr_1fr_1fr]">
+              <h3 class="p-5 font-semibold text-blue-950 md:p-6">{item.label}</h3>
+              <div class="border-t border-slate-100 p-5 md:border-l md:border-t-0 md:p-6">
+                <p class="mb-1 text-xs font-semibold uppercase tracking-wider text-slate-600 md:hidden">Traditional</p>
+                <p class="leading-7 text-slate-600">{item.traditional}</p>
+              </div>
+              <div class="border-t border-blue-100 bg-blue-50/60 p-5 md:border-l md:border-t-0 md:p-6">
+                <p class="mb-1 text-xs font-semibold uppercase tracking-wider text-blue-700 md:hidden">OnTrack</p>
+                <p class="leading-7 text-slate-700">{item.onTrack}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-slate-50 py-16 text-slate-700 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Designed for learning</p>
+          <h2 class="mt-4 font-display text-3xl font-semibold tracking-tight text-blue-950 text-balance sm:text-4xl">
+            Flexible in format. Consistent in purpose.
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            OnTrack can adapt to different teaching contexts while keeping active learning, meaningful feedback, and trusted evidence at its core.
+          </p>
+        </div>
+
+        <div class="mx-auto mt-12 grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-16">
+          <div class="border-t-2 border-blue-200 pt-6">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">Flexible by design</p>
+            <h3 class="mt-3 font-display text-2xl font-semibold tracking-tight text-blue-950 text-balance sm:text-3xl">
+              A framework, not a fixed teaching format
+            </h3>
+            <p class="mt-4 text-lg leading-8 text-slate-600">
+              OnTrack defines how learning is developed, evidenced, supported, and validated. It does not prescribe a single way to deliver content.
+            </p>
+            <p class="mt-4 leading-7 text-slate-600">
+              A unit can be weekly or self-paced, face-to-face, online, flipped or more traditionally structured. What connects every OnTrack design is a coherent sequence of active tasks, regular staff–student touchpoints, opportunities to improve, and a portfolio of trusted evidence.
+            </p>
+          </div>
+
+          <div class="border-t-2 border-blue-200 pt-6">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Progress through feedback</p>
+            <h3 class="mt-3 font-display text-2xl font-semibold tracking-tight text-blue-950 text-balance sm:text-3xl">
+              “Not yet” is a next step, not a dead end
+            </h3>
+            <p class="mt-4 text-lg leading-8 text-slate-600">
+              Each task is judged against clear criteria. When the evidence is sufficient, the task is complete. When it is not yet sufficient, the student receives guidance and another opportunity to demonstrate the standard.
+            </p>
+            <div class="mt-7 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-semibold uppercase tracking-[0.12em] text-blue-950" aria-label="Attempt, feedback, improve, complete">
+              <span>Attempt</span>
+              <span class="text-blue-300" aria-hidden="true">→</span>
+              <span>Feedback</span>
+              <span class="text-blue-300" aria-hidden="true">→</span>
+              <span>Improve</span>
+              <span class="text-blue-300" aria-hidden="true">→</span>
+              <span>Complete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 text-slate-700 sm:py-20">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div class="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Grades represent achievement</p>
+            <h2 class="mt-4 font-display text-3xl font-semibold tracking-tight text-blue-950 text-balance sm:text-4xl">
+              Students know what each grade requires
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-slate-600">
+              Tasks are aligned to learning outcomes and, where ranked grades are used, to grade-level standards. To achieve a grade, students complete the tasks required for that level, not simply collect enough marks to cross a numerical threshold.
+            </p>
+            <p class="mt-5 leading-7 text-slate-600">
+              This prevents strong performance in one area from concealing an important gap elsewhere. Once every required task for a grade level is complete, the student has secured at least that grade.
+            </p>
+          </div>
+
+          <figure class="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 p-3 shadow-sm ring-1 ring-slate-100 sm:p-5">
+            <video
+              class="h-auto w-full rounded-2xl bg-white"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Animation showing a task moving through submission, feedback, revision, and completion"
+            >
+              <source src="/ContentImages/TaskAssessmentGif.mp4" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+
+        <div class="mt-12 overflow-hidden border-y border-slate-200 md:grid md:grid-cols-4 md:divide-x md:divide-slate-200">
+          {gradeBands.map((band, index) => (
+            <article class="flex gap-4 border-t border-slate-200 py-6 first:border-t-0 md:block md:border-t-0 md:px-6 md:py-8 md:first:pl-0 md:last:pr-0">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-full bg-blue-100 text-sm font-semibold text-blue-800">
+                {index + 1}
+              </span>
+              <div>
+                <h3 class="font-display text-xl font-semibold text-blue-950 md:mt-4">{band.grade}</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">{band.requirement}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p class="mt-5 text-sm leading-6 text-slate-500">
+          The exact grade structure can be adapted to the needs of each learning context.
+        </p>
+      </div>
+    </section>
+
+    <section class="border-t border-slate-200 bg-slate-50 py-16 text-slate-700 sm:py-20">
+      <div class="mx-auto max-w-4xl px-6 sm:px-8 lg:px-12">
+        <div class="text-center">
+          <h2 class="mt-4 font-display text-3xl font-semibold tracking-tight text-blue-950 text-balance sm:text-4xl">
+            How we introduce OnTrack to students
+          </h2>
+        </div>
+
+        <div class="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 shadow-lg ring-1 ring-slate-200">
+          <div class="aspect-video">
+            <iframe
+              class="h-full w-full"
+              src="https://www.youtube-nocookie.com/embed/GMDU4_D-uKY"
+              title="Introduction to learning with the OnTrack Education Framework"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </BaseLayout>
