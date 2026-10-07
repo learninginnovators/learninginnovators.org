@@ -84,6 +84,13 @@ export default defineConfig({
               collapsed: true,
             },
       },
+      {
+        label: "Developer Documentation",
+            autogenerate: {
+              directory: "docs/developer-doc",
+              collapsed: true,
+            },
+      },
     ]
   })]
 });
