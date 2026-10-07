@@ -25,6 +25,14 @@ We welcome contributions to the Learning Innovators documentation! Whether you'r
 7. Submit a pull request with a clear description of your changes and why they are needed.
 8. Our team will review your pull request and provide feedback. Once approved, your changes will be merged into the main branch.
 
+## Tech Stack
+
+This website is built using [Astro](https://astro.build/), [Starlight](https://starlight.astro.build/getting-started/),and [Tailwind CSS](https://tailwindcss.com/).
+
+Key plugins used in this project include:
+
+- [starlightLinksValidator](https://docs.astro.build/en/guides/starlight/#starlight-links-validator) - Validates links in the documentation.
+
 ## How to Get Started
 
 Documentation content is written in Markdown and organized in the `src/content/docs/docs` directory.
